@@ -73,10 +73,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-211117-sfvuln" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/blog/2021/11/17/211117-sfvuln/" class="article-date">
-  <time class="dt-published" datetime="2021-11-18T00:00:00.000Z" itemprop="datePublished">2021-11-17</time>
+    <a href="/blog/1969/12/31/test/" class="article-date">
+  <time class="dt-published" datetime="1970-01-01T00:00:00.000Z" itemprop="datePublished">1969-12-31</time>
 </a>
     
   <div class="article-category">
@@ -91,7 +91,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2021/11/17/211117-sfvuln/">Found and Reported Software Vulnerability</a>
+      <a class="p-name article-title" href="/blog/1969/12/31/test/">testing</a>
     </h1>
   
 
@@ -99,153 +99,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Found-and-Reported-Software-Vulnerability"><a href="#Found-and-Reported-Software-Vulnerability" class="headerlink" title="Found and Reported Software Vulnerability"></a>Found and Reported Software Vulnerability</h2><p>I found and reported a zero-day vulnerability (arbitrary code execution) in a software to IPA(Information-technology Promotion Agency) and it was accepted.</p>
-<h2 id="Certificate"><a href="#Certificate" class="headerlink" title="Certificate"></a>Certificate</h2><img src="/blog/2021/11/17/211117-sfvuln/01.jpg" class="" title="IPACert">
-
+        <p>testing if it works :-;</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pppig236/blog/2021/11/17/211117-sfvuln/" data-id="ckyelwudp000epdym66se63jw" data-title="Found and Reported Software Vulnerability" class="article-share-link">Share</a>
+      <a data-url="https://pppig236/blog/1969/12/31/test/" data-id="ckyeme17h000023ym82rjbsey" data-title="testing" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/General/" rel="tag">General</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Vulnerability/" rel="tag">Vulnerability</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-210715-android12b3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2021/07/15/210715-android12b3/" class="article-date">
-  <time class="dt-published" datetime="2021-07-15T12:48:00.000Z" itemprop="datePublished">2021-07-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/General/">General</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2021/07/15/210715-android12b3/">Android 12 Beta3 Update</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Android-12-Beta3"><a href="#Android-12-Beta3" class="headerlink" title="Android 12 Beta3"></a>Android 12 Beta3</h2><p>I have updated the Pixel 3 XL (crosshatch) to Android 12 beta3 from beta2.</p>
-<h3 id="Install-steps"><a href="#Install-steps" class="headerlink" title="Install steps"></a>Install steps</h3><ol>
-<li><p>Enter the fastboot mode<br>Enter fastboot mode. You can enter it with the combo key or <code>adb reboot bootloader</code> command.<br>To enter with the combo key, press and hold the power button and volume down button at the same time while the power is off.</p>
-<img src="/blog/2021/07/15/210715-android12b3/01.jpg" class="" title="pixel3xl"></li>
-<li><p>Install with fastboot command<br>Download recovery image from Android Developers site:<br><a target="_blank" rel="noopener" href="https://developer.android.com/about/versions/12/download">https://developer.android.com/about/versions/12/download</a><br>and Execute <code>fastboot update</code> command.<br>The original <code>flash-all.sh</code> has the <code>-w</code> option of<code> fastboot update</code> enabled to wipe the data.<br>I don’t use it.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bootloader update</span></span><br><span class="line">fastboot flash bootloader bootloader-crosshatch-b1c1-0.4-7315493.img</span><br><span class="line"><span class="comment"># radio firmware update</span></span><br><span class="line">fastboot flash radio radio-crosshatch-g845-00188-210602-b-7417145.img</span><br><span class="line"><span class="comment"># update android firmware</span></span><br><span class="line">fastboot update image-crosshatch-spb3.210618.013.zip</span><br></pre></td></tr></table></figure>
-<img src="/blog/2021/07/15/210715-android12b3/02.jpg" class="" title="fastboot"></li>
-<li><p>Done<br>the previous version information was S, but now it is 12.<br>It looks like it’s approaching release.</p>
-<img src="/blog/2021/07/15/210715-android12b3/03.jpg" class="" title="versioninfo"></li>
-</ol>
-<h2 id="What’s-new-in-Beta3"><a href="#What’s-new-in-Beta3" class="headerlink" title="What’s new in Beta3?"></a>What’s new in Beta3?</h2><ol>
-<li>Scrolling screenshot<br>Apps created using a standard View correspond to Android 12 scrolling screenshot.<br>Apps that do not use View can be made compatible by implementing the ScrollCapture API.<img src="/blog/2021/07/15/210715-android12b3/04.png" class="" title="alt">
-<img src="/blog/2021/07/15/210715-android12b3/05.png" class="" title="alt"></li>
-<li>Link copy-share button<br>Google added link copy-share button in recents view in Android<br>You can set URL in <code>onProvideAssistContent()</code> method.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onProvideAssistContent</span><span class="params">(AssistContent outContent)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onProvideAssistContent(outContent);</span><br><span class="line"></span><br><span class="line">        outContent.setWebUri(Uri.parse(<span class="string">&quot;https://example.com/myCurrentPage&quot;</span>));</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<img src="/blog/2021/07/15/210715-android12b3/06.png" class="" title="alt">
-<img src="/blog/2021/07/15/210715-android12b3/07.png" class="" title="alt"></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://pppig236/blog/2021/07/15/210715-android12b3/" data-id="ckyelwudh0000pdymeur98zlp" data-title="Android 12 Beta3 Update" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Android/" rel="tag">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/General/" rel="tag">General</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-210702-win11arm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2021/07/02/210702-win11arm/" class="article-date">
-  <time class="dt-published" datetime="2021-07-02T14:00:00.000Z" itemprop="datePublished">2021-07-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/General/">General</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2021/07/02/210702-win11arm/">Windows 11 Insider on ARM QEMU</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><p>Raspberry Pi 4<br>Arch Linux ARM<br>QEMU KVM Accelerated</p>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><ol>
-<li><p>Run <code>qemu-system-aarch64</code> with windows 11 iso and drivers</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">qemu-system-aarch64 \</span><br><span class="line">-cpu host \</span><br><span class="line">-enable-kvm \</span><br><span class="line">-M virt-2.12 \</span><br><span class="line">-smp 3 \</span><br><span class="line">-m 3G \</span><br><span class="line">-bios QEMU_EFI.img \</span><br><span class="line">-device ramfb \</span><br><span class="line">-device ich9-usb-ehci1 \</span><br><span class="line">-device usb-kbd \</span><br><span class="line">-device usb-mouse \</span><br><span class="line">-device usb-storage,drive=windows \</span><br><span class="line">-drive <span class="keyword">if</span>=none,id=windows,media=cdrom,file=win11_arm64.iso \</span><br><span class="line">-device usb-storage,drive=drivers \</span><br><span class="line">-drive <span class="keyword">if</span>=none,id=drivers,media=cdrom,file=virtio-win-0.1.173.iso \</span><br><span class="line">-device virtio-blk,drive=system -vnc :1 \</span><br><span class="line">-drive <span class="keyword">if</span>=none,id=system,format=qcow2,file=disk.img</span><br></pre></td></tr></table></figure>
-<p>(This command listens VNC on :1 port)</p>
-</li>
-<li><p>Load drivers and Requirements check</p>
-<img src="/blog/2021/07/02/210702-win11arm/01.jpg" class="" title="alt">
-<p>Okay… This device can’t install windows 11 normally()</p>
-<img src="/blog/2021/07/02/210702-win11arm/02.jpg" class="" title="alt"></li>
-<li><p>Install with command line<br>create partition with <code>diskpart</code></p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">diskpart</span><br><span class="line">select disk <span class="number">0</span></span><br><span class="line">clean</span><br><span class="line"><span class="built_in">convert</span> gpt</span><br><span class="line">:: (clean disk <span class="number">0</span> and <span class="built_in">set</span> as gpt partition style)</span><br><span class="line">create partition efi size=<span class="number">100</span></span><br><span class="line">assign letter=S</span><br><span class="line">:: (Create efi partition)</span><br><span class="line">create partition primary</span><br><span class="line">assign letter=W</span><br><span class="line">:: (Create Windows primary partition)</span><br></pre></td></tr></table></figure>
-<p>I don’t create an RE env here because it’s annoying. lol</p>
-</li>
-<li><p>Install bootloader<br>Install bootloader with bcdboot</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">W:\Windows\System32\bcdboot.exe W:\Windows /l ja-JP</span><br></pre></td></tr></table></figure>
-<p>and set TESTSIGNING mode for load unsigned unofficial drivers</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">W:\Windows\System32\bcdedit.exe -set TESTSIGNING ON</span><br></pre></td></tr></table></figure></li>
-<li><p>Deploy Windows Image with DISM</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /Apply-Image /ImageFile:E:\sources\install.wim /Index:1 /ApplyDir:W:\ /Compact /EA</span><br></pre></td></tr></table></figure>
-<img src="/blog/2021/07/02/210702-win11arm/03.jpg" class="" title="alt"></li>
-<li><p>Install disk driver<br>Since it is set to use virtio SCSI of KVM, a black screen (blue screen) will occur if there is no driver.</p>
-<img src="/blog/2021/07/02/210702-win11arm/04.png" class="" title="alt">
-<p>Apply driver with dism</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dism /image:w:\ /add-driver /driver:E:\ARM64\w10\vioscsi.inf</span><br><span class="line">dism /image:w:\ /add-driver /driver:E:\ARM64\w10\viostor.inf</span><br></pre></td></tr></table></figure>
-<img src="/blog/2021/07/02/210702-win11arm/05.png" class="" title="alt"></li>
-<li><p>Done!</p>
-<img src="/blog/2021/07/02/210702-win11arm/06.png" class="" title="alt">
-<img src="/blog/2021/07/02/210702-win11arm/07.png" class="" title="alt"></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://pppig236/blog/2021/07/02/210702-win11arm/" data-id="ckyelwudj0001pdyme8do81cp" data-title="Windows 11 Insider on ARM QEMU" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/General/" rel="tag">General</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/General/" rel="tag">General</a></li></ul>
 
     </footer>
   </div>
@@ -275,7 +138,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Android/" rel="tag">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/General/" rel="tag">General</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Vulnerability/" rel="tag">Vulnerability</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/General/" rel="tag">General</a></li></ul>
     </div>
   </div>
 
@@ -285,7 +148,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/blog/tags/Android/" style="font-size: 10px;">Android</a> <a href="/blog/tags/General/" style="font-size: 20px;">General</a> <a href="/blog/tags/Vulnerability/" style="font-size: 10px;">Vulnerability</a> <a href="/blog/tags/Windows/" style="font-size: 10px;">Windows</a>
+      <a href="/blog/tags/General/" style="font-size: 10px;">General</a>
     </div>
   </div>
 
@@ -294,7 +157,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2021/07/">July 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/1969/12/">December 1969</a></li></ul>
     </div>
   </div>
 
@@ -307,15 +170,7 @@
       <ul>
         
           <li>
-            <a href="/blog/2021/11/17/211117-sfvuln/">Found and Reported Software Vulnerability</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2021/07/15/210715-android12b3/">Android 12 Beta3 Update</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2021/07/02/210702-win11arm/">Windows 11 Insider on ARM QEMU</a>
+            <a href="/blog/1969/12/31/test/">testing</a>
           </li>
         
       </ul>
