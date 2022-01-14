@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: yuk7's blog
-subtitle: 'yuk7 blog'
-description: 'yuk7 tech blog'
+title: PIPIPIG233666's blog
+subtitle: ''
+description: 'My random sh*t posts'
 keywords:
-author: yuk7
-language: ja
-timezone: 'Asia/Tokyo'
+author: PIPIPIG233666
+language: en
+timezone: 'America/Detroit'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://yuk7.github.com/blog
+url: https://pppig236/blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,5 +103,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:yuk7/blog.git
+  repo: git@github.com:PIPIPIG233666/blog.git
   branch: main
