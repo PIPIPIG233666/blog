@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Overclocking RAM attempt on Legion7-16ITHg6 - PIPIPIG233666&#39;s blog</title>
+    <title>Overclocking non-XMP RAM attempt on Legion7-16ITHg6 - PIPIPIG233666&#39;s blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
@@ -75,7 +75,7 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/blog/img/favicon.png" alt="" data-url="https://pppig236/blog">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Overclocking RAM attempt on Legion7-16ITHg6</h3>
+        <h3 class="subtitle">Overclocking non-XMP RAM attempt on Legion7-16ITHg6</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -110,20 +110,20 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
                 
                 January 17, 2022
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/blog/2022/01/17/Overclocking-RAM-on-Legion7-16ITHg6/" title="Overclocking RAM attempt on Legion7-16ITHg6" class="">Overclocking RAM attempt on Legion7-16ITHg6</a>
+            <h3 class="post-title animated fadeInDown"><a href="/blog/2022/01/17/Overclocking-RAM-on-Legion7-16ITHg6/" title="Overclocking non-XMP RAM attempt on Legion7-16ITHg6" class="">Overclocking non-XMP RAM attempt on Legion7-16ITHg6</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    5.2k
+                    7.3k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    5 mins.
+                    7 mins.
                 </span>
                 
                 
@@ -176,7 +176,18 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
 <p>2Rx8 chips are embedded on each sides, making it a 32Gx2 Dual Rank kit </p>
 <p>According to Micron documents, it means: <code>2020-10th_week-E-die-japan-china</code></p>
 <p>By looking up in Micron’s database, it corresponds to this:</p>
-<p>|Part Number         |  FBGA Code|<br>|MT40A2G8JC-062E:E |    D9ZFV|</p>
+<table>
+<thead>
+<tr>
+<th align="center">Part Number</th>
+<th align="center">FBGA Code</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MT40A2G8JC-062E:E</td>
+<td align="center">D9ZFV</td>
+</tr>
+</tbody></table>
 <p><a target="_blank" rel="noopener" href="https://www.micron.com/products/dram/ddr4-sdram/part-catalog/mt40a2g8jc-062e">MT40A2G8JC-062E | Micron Technologies, Inc</a></p>
 <p><img src="image-20220117121249444.png" alt="Stock results, trash as hell"></p>
 <hr>
@@ -192,8 +203,80 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
 <p><img src="image-20220117121457778.png" alt="Final attempt"></p>
 <p>It did not pass the TM5 stress test, but it seems fine so far. At least it ran the AIDA64 bench without any issues.</p>
 <p>I’ll check out games and Time spy later today. Hopefully it will weather the stress.</p>
+<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><table>
+<thead>
+<tr>
+<th align="center">Result</th>
+<th align="center">Trial</th>
+<th align="center">CLK(MHz)</th>
+<th align="center">CL</th>
+<th align="center">tRCD/RP</th>
+<th align="center">tRAS</th>
+<th align="center">tRFC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&#10062;</td>
+<td align="center">1</td>
+<td align="center">3200</td>
+<td align="center">18</td>
+<td align="center">19</td>
+<td align="center">36</td>
+<td align="center">480</td>
+</tr>
+<tr>
+<td align="center">&#9989;</td>
+<td align="center">2</td>
+<td align="center">3200</td>
+<td align="center">21</td>
+<td align="center">21</td>
+<td align="center">47</td>
+<td align="center">480</td>
+</tr>
+<tr>
+<td align="center">&#10062;</td>
+<td align="center">3</td>
+<td align="center">3200</td>
+<td align="center">19</td>
+<td align="center">20</td>
+<td align="center">40</td>
+<td align="center">480</td>
+</tr>
+<tr>
+<td align="center">&#9989;</td>
+<td align="center">4</td>
+<td align="center">3400</td>
+<td align="center">22</td>
+<td align="center">22</td>
+<td align="center">52</td>
+<td align="center">560</td>
+</tr>
+<tr>
+<td align="center">&#10062;</td>
+<td align="center">5</td>
+<td align="center">3400</td>
+<td align="center">20</td>
+<td align="center">20</td>
+<td align="center">50</td>
+<td align="center">560</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">6</td>
+<td align="center">3400</td>
+<td align="center">21</td>
+<td align="center">20</td>
+<td align="center">51</td>
+<td align="center">560</td>
+</tr>
+</tbody></table>
 <hr>
 <h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Played <code>Tomb Raider</code>, which I got from <code>Epic Games</code>, for 30 minutes, and it seems all good. Played <code>League of Legends</code> for another 23 minutes, no BSOD yet.</p>
+<hr>
+<h2 id="Update-2"><a href="#Update-2" class="headerlink" title="Update #2"></a>Update #2</h2><p>It gave me a BSOD while playing my second Aram game in LOL.</p>
+<p>(Sigh…)</p>
+<p><img src="image-20220117151242978.png" alt="3400MHz@CL21"></p>
+<p>As you can see I bumped the timings a bit, and it does not seem to be losing performance in the benchmark. Let’s see if this can hold any longer.</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -254,7 +337,7 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prologue"><span class="toc-number">1.</span> <span class="toc-text">Prologue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Weird-Reddit-post"><span class="toc-number">2.</span> <span class="toc-text">Weird Reddit post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-RAM-kit"><span class="toc-number">3.</span> <span class="toc-text">My RAM kit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-hands-dirty"><span class="toc-number">4.</span> <span class="toc-text">Get hands dirty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-results"><span class="toc-number">5.</span> <span class="toc-text">Final results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update"><span class="toc-number">6.</span> <span class="toc-text">Update</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prologue"><span class="toc-number">1.</span> <span class="toc-text">Prologue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Weird-Reddit-post"><span class="toc-number">2.</span> <span class="toc-text">Weird Reddit post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-RAM-kit"><span class="toc-number">3.</span> <span class="toc-text">My RAM kit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-hands-dirty"><span class="toc-number">4.</span> <span class="toc-text">Get hands dirty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-results"><span class="toc-number">5.</span> <span class="toc-text">Final results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data"><span class="toc-number">6.</span> <span class="toc-text">Data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update"><span class="toc-number">7.</span> <span class="toc-text">Update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update-2"><span class="toc-number">8.</span> <span class="toc-text">Update #2</span></a></li></ol>
                 </div>
             </div>
             
