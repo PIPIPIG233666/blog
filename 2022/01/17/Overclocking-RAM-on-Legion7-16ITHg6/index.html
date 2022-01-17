@@ -116,13 +116,13 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    5.1k
+                    4k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    5 mins.
+                    4 mins.
                 </span>
                 
                 
@@ -166,30 +166,24 @@
 <p>Based on our past experience, whenever the mobo feels not good about the timings/OC/UV you set, it does fail to post, and it does not show a black screen.</p>
 <p>Why? Because of the <em>stupid</em> <code>self-healing</code> probably. I thought so at the beginning.</p>
 <p>Well, it might not be true. Today I read the comment and was temped to  give RAM OC and CMOS reset a try. (I don’t have to mess around with UV anymore because I figured out that -70mv is the best and I set that in BIOS already)</p>
-<p>My RAM kit is a crappy <code>3200@CL22</code> one from Mushkin Essentials, an unknown sub-brand owned by Avant Tech., another no-name company. It mainly uses SK Hynix chips due to its low costs while mine actually is using Micron chips.(SPD was empty somehow)</p>
-<p><img src="Z:\blog\source_posts\Overclocking-RAM-on-Legion7-16ITHg6\image-20220117115719644.png" alt="image-20220117115719644"></p>
-<hr>
+<p>My RAM kit is a crappy <code>3200MHz@CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another no-name company. It mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p>
+<p><img src="image-20220117115719644.png" alt="CPU-Z"></p>
 <p>My kit came with Micron chips, with the following code printed clearly on the two-sided stick:</p>
-<hr>
 <p>0FE45<br>D9ZFV</p>
 <p>2Rx8 chips are embedded on each sides, making it a 32Gx2 Dual Rank kit </p>
-<hr>
 <p>According to Micron documents, it means: 2020-10th_week-E-die-japan-china</p>
-<hr>
 <p>By looking up in Micron’s database, it corresponds to this:</p>
 <p>Part Number                   FBGA Code<br>MT40A2G8JC-062E:E    D9ZFV</p>
-<p><img src="Z:\blog\source_posts\Overclocking-RAM-on-Legion7-16ITHg6\image-20220117121249444.png" alt="image-20220117121249444"></p>
-<p>Stock configs result, trash as hell</p>
-<hr>
+<p><img src="image-20220117121249444.png" alt="Stock results, trash as hell"></p>
 <p>Long story short, with the above information in mind, I know that this kit cannot be OC’ed much. I also know that I should disable <code>self-healing</code>  while at it.</p>
-<p>So my first shot was 3200@<a href="mailto:&#49;&#56;&#45;&#x31;&#57;&#x2d;&#49;&#57;&#45;&#51;&#54;&#64;&#49;&#x2e;&#x33;&#53;&#118;">&#49;&#56;&#45;&#x31;&#57;&#x2d;&#49;&#57;&#45;&#51;&#54;&#64;&#49;&#x2e;&#x33;&#53;&#118;</a>. This simply did not post. Okay, so I unplugged the battery and CMOS battery. Pressed and hold the power button for like a min. Then plugged them back in. Press the button again, magically, it posted and booted right into Windows.</p>
-<p>Yawn, I know this sucks, so I tried a milder OC, 3200@<a href="mailto:&#50;&#49;&#45;&#x32;&#49;&#x2d;&#x32;&#49;&#x2d;&#52;&#55;&#64;&#49;&#46;&#50;&#x76;">&#50;&#49;&#45;&#x32;&#49;&#x2d;&#x32;&#49;&#x2d;&#52;&#55;&#64;&#49;&#46;&#50;&#x76;</a>. This booted just fine. </p>
-<p>I guessed it could be pushed even more, thus next I tried 3200@<a href="mailto:&#x31;&#x39;&#x2d;&#x32;&#x30;&#45;&#50;&#48;&#x2d;&#x34;&#48;&#64;&#x31;&#x2e;&#51;&#x35;&#x76;">&#x31;&#x39;&#x2d;&#x32;&#x30;&#45;&#50;&#48;&#x2d;&#x34;&#48;&#64;&#x31;&#x2e;&#51;&#x35;&#x76;</a>. And it booted as well. However, as I ran a Cache and Mem test in AIDA64, the screen froze when it’s running the write test.</p>
-<p>I almost gave up, did another trial with 3400@<a href="mailto:&#x32;&#50;&#x2d;&#x32;&#x32;&#45;&#53;&#x32;&#x40;&#x31;&#46;&#51;&#53;&#118;">&#x32;&#50;&#x2d;&#x32;&#x32;&#45;&#53;&#x32;&#x40;&#x31;&#46;&#51;&#53;&#118;</a>. Surprisingly, it cripplingly booted!</p>
-<p><img src="Z:\blog\source_posts\Overclocking-RAM-on-Legion7-16ITHg6\image-20220117121013282.png" alt="image-20220117121013282"></p>
+<p>So my first shot was <code>3200MHz, 18-19-19-36@1.35v</code>. This simply did not post. Okay, so I unplugged the battery and CMOS battery. Pressed and hold the power button for like a min. Then plugged them back in. Press the button again, magically, it posted and booted right into Windows.</p>
+<p>Yawn, I know this sucks, so I tried a milder OC, <code>3200MHz, 21-21-21-47@1.2v</code>. This booted just fine. </p>
+<p>I guessed it could be pushed even more, thus next I tried <code>3200MHz, 19-20-20-40@1.35v</code>. And it booted as well. However, as I ran a Cache and Mem test in AIDA64, the screen froze when it’s running the write test.</p>
+<p>I almost gave up, did another trial with <code>3400MHz, 22-22-52@1.35v</code>. Surprisingly, it cripplingly booted!</p>
+<p><img src="image-20220117121013282.png" alt="First successful attempt, not great"></p>
 <p>Latency almost dropped by 20%, and read/write increased significantly as well.</p>
-<p>I wanted more so I eventually set it to 3400@<a href="mailto:&#x32;&#x30;&#45;&#50;&#x30;&#45;&#53;&#48;&#64;&#x31;&#46;&#x33;&#53;&#x76;">&#x32;&#x30;&#45;&#50;&#x30;&#45;&#53;&#48;&#64;&#x31;&#46;&#x33;&#53;&#x76;</a>.</p>
-<p><img src="Z:\blog\source_posts\Overclocking-RAM-on-Legion7-16ITHg6\image-20220117121457778.png" alt="image-20220117121457778"></p>
+<p>I wanted more so I eventually set it to <code>3400MHz, 20-20-50@1.35v</code>.</p>
+<p><img src="image-20220117121457778.png" alt="Final attempt"></p>
 <p>It did not pass the TM5 stress test, but it seems fine so far. At least it ran the AIDA64 bench without any issues.</p>
 <p>I’ll check out games and Time spy later today. Hopefully it will weather the stress.</p>
 
