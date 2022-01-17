@@ -117,13 +117,13 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    7.3k
+                    10k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    7 mins.
+                    9 mins.
                 </span>
                 
                 
@@ -170,7 +170,7 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
 <p>Why? Because of the <em>stupid</em> <code>self-healing</code> probably. I thought so at the beginning.</p>
 <p>Well, it might not be true. Today I read the comment and was temped to give RAM OC and CMOS reset a try. (I don’t have to mess around with UV anymore because I figured out that -70mv is the best and I set that in BIOS already)</p>
 <hr>
-<h2 id="My-RAM-kit"><a href="#My-RAM-kit" class="headerlink" title="My RAM kit"></a>My RAM kit</h2><p>My RAM kit is a crappy <code>3200MHz@CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another non-popular American company. The manufactuerer mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p>
+<h2 id="My-RAM-kit"><a href="#My-RAM-kit" class="headerlink" title="My RAM kit"></a>My RAM kit</h2><p>My RAM kit is a crappy <code>3200MHz@CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another non-popular American company. The manufacturer mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p>
 <p><img src="image-20220117115719644.png" alt="CPU-Z"></p>
 <p>Like I said, my kit came with Micron chips, with the following code printed clearly on the two-sided stick:<br><code>0FE45</code><br><code>D9ZFV</code><br><img src="image-20220117141703003.png" alt="RAM installed"></p>
 <p>2Rx8 chips are embedded on each sides, making it a 32Gx2 Dual Rank kit </p>
@@ -203,80 +203,143 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
 <p><img src="image-20220117121457778.png" alt="Final attempt"></p>
 <p>It did not pass the TM5 stress test, but it seems fine so far. At least it ran the AIDA64 bench without any issues.</p>
 <p>I’ll check out games and Time spy later today. Hopefully it will weather the stress.</p>
-<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><table>
+<h2 id="Data-analysis"><a href="#Data-analysis" class="headerlink" title="Data analysis"></a>Data analysis</h2><h3 id="Before-OC-baseline"><a href="#Before-OC-baseline" class="headerlink" title="Before OC (baseline):"></a>Before OC (baseline):</h3><table>
 <thead>
 <tr>
-<th align="center">Result</th>
-<th align="center">Trial</th>
-<th align="center">CLK(MHz)</th>
+<th align="center">CLK</th>
 <th align="center">CL</th>
 <th align="center">tRCD/RP</th>
 <th align="center">tRAS</th>
 <th align="center">tRFC</th>
+<th align="center">R</th>
+<th align="center">W</th>
+<th align="center">Cp</th>
+<th align="center">Latency</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">3200</td>
+<td align="center">22</td>
+<td align="center">22</td>
+<td align="center">52</td>
+<td align="center">560</td>
+<td align="center">44270</td>
+<td align="center">43619</td>
+<td align="center">41191</td>
+<td align="center">110</td>
+</tr>
+</tbody></table>
+<h3 id="After-OC"><a href="#After-OC" class="headerlink" title="After OC:"></a>After OC:</h3><table>
+<thead>
+<tr>
+<th align="center">Result</th>
+<th align="center">CLK</th>
+<th align="center">CL</th>
+<th align="center">tRCD/RP</th>
+<th align="center">tRAS</th>
+<th align="center">tRFC</th>
+<th align="center">R</th>
+<th align="center">W</th>
+<th align="center">Cp</th>
+<th align="center">Latency</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">&#10062;</td>
-<td align="center">1</td>
 <td align="center">3200</td>
 <td align="center">18</td>
 <td align="center">19</td>
 <td align="center">36</td>
 <td align="center">480</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
 </tr>
 <tr>
 <td align="center">&#9989;</td>
-<td align="center">2</td>
 <td align="center">3200</td>
 <td align="center">21</td>
 <td align="center">21</td>
 <td align="center">47</td>
 <td align="center">480</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
 </tr>
 <tr>
 <td align="center">&#10062;</td>
-<td align="center">3</td>
 <td align="center">3200</td>
 <td align="center">19</td>
 <td align="center">20</td>
 <td align="center">40</td>
 <td align="center">480</td>
+<td align="center">N/A</td>
+<td align="center">N//A</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
 </tr>
 <tr>
 <td align="center">&#9989;</td>
-<td align="center">4</td>
 <td align="center">3400</td>
 <td align="center">22</td>
 <td align="center">22</td>
 <td align="center">52</td>
 <td align="center">560</td>
+<td align="center">49942</td>
+<td align="center">48111</td>
+<td align="center">66065</td>
+<td align="center">85</td>
 </tr>
 <tr>
 <td align="center">&#10062;</td>
-<td align="center">5</td>
 <td align="center">3400</td>
 <td align="center">20</td>
 <td align="center">20</td>
 <td align="center">50</td>
 <td align="center">560</td>
+<td align="center">52894</td>
+<td align="center">48343</td>
+<td align="center">47989</td>
+<td align="center">85</td>
 </tr>
 <tr>
-<td align="center"></td>
-<td align="center">6</td>
+<td align="center">&#10062;</td>
 <td align="center">3400</td>
 <td align="center">21</td>
 <td align="center">20</td>
 <td align="center">51</td>
 <td align="center">560</td>
+<td align="center">52244</td>
+<td align="center">48173</td>
+<td align="center">51571</td>
+<td align="center">85</td>
+</tr>
+<tr>
+<td align="center">&#9989;</td>
+<td align="center">3400</td>
+<td align="center">21</td>
+<td align="center">21</td>
+<td align="center">51</td>
+<td align="center">560</td>
+<td align="center">52352</td>
+<td align="center">48136</td>
+<td align="center">51306</td>
+<td align="center">86</td>
 </tr>
 </tbody></table>
-<hr>
+<h5 id="Memory-clocks-are-measured-in-MHz-Read-write-and-copy-speeds-are-measured-in-MB-s-Latencies-are-measured-in-ns"><a href="#Memory-clocks-are-measured-in-MHz-Read-write-and-copy-speeds-are-measured-in-MB-s-Latencies-are-measured-in-ns" class="headerlink" title="Memory clocks are measured in MHz. Read, write and copy speeds are measured in MB/s. Latencies are measured in ns."></a><em>Memory clocks are measured in MHz. Read, write and copy speeds are measured in MB/s. Latencies are measured in ns.</em></h5><hr>
 <h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Played <code>Tomb Raider</code>, which I got from <code>Epic Games</code>, for 30 minutes, and it seems all good. Played <code>League of Legends</code> for another 23 minutes, no BSOD yet.</p>
 <hr>
-<h2 id="Update-2"><a href="#Update-2" class="headerlink" title="Update #2"></a>Update #2</h2><p>It gave me a BSOD while playing my second Aram game in LOL.</p>
+<h2 id="Update-2"><a href="#Update-2" class="headerlink" title="Update #2"></a>Update #2</h2><p>It gave me a frozen screen while playing my second Aram game in LOL.</p>
 <p>(Sigh…)</p>
 <p><img src="image-20220117151242978.png" alt="3400MHz@CL21"></p>
 <p>As you can see I bumped the timings a bit, and it does not seem to be losing performance in the benchmark. Let’s see if this can hold any longer.</p>
+<hr>
+<h2 id="Update-3"><a href="#Update-3" class="headerlink" title="Update #3"></a>Update #3</h2><p>Well, it crashed again. Now I’ve slackened the timings even more, and I am running the TM5 with <code>Extreme1@anta777</code> again; it’s been 1 hour without an error.</p>
+<p><img src="image-20220117170758947.png" alt="TM5, Extreme1@anta777"></p>
+<p>I guess I should work on timings more next time it crashes(it probably never will).</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -337,7 +400,7 @@ PrologueWhen I first bricked my brand new Legion 7i back in last August, I was c
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prologue"><span class="toc-number">1.</span> <span class="toc-text">Prologue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Weird-Reddit-post"><span class="toc-number">2.</span> <span class="toc-text">Weird Reddit post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-RAM-kit"><span class="toc-number">3.</span> <span class="toc-text">My RAM kit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-hands-dirty"><span class="toc-number">4.</span> <span class="toc-text">Get hands dirty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-results"><span class="toc-number">5.</span> <span class="toc-text">Final results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data"><span class="toc-number">6.</span> <span class="toc-text">Data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update"><span class="toc-number">7.</span> <span class="toc-text">Update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update-2"><span class="toc-number">8.</span> <span class="toc-text">Update #2</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prologue"><span class="toc-number">1.</span> <span class="toc-text">Prologue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Weird-Reddit-post"><span class="toc-number">2.</span> <span class="toc-text">Weird Reddit post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-RAM-kit"><span class="toc-number">3.</span> <span class="toc-text">My RAM kit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-hands-dirty"><span class="toc-number">4.</span> <span class="toc-text">Get hands dirty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-results"><span class="toc-number">5.</span> <span class="toc-text">Final results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-analysis"><span class="toc-number">6.</span> <span class="toc-text">Data analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Before-OC-baseline"><span class="toc-number">6.1.</span> <span class="toc-text">Before OC (baseline):</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#After-OC"><span class="toc-number">6.2.</span> <span class="toc-text">After OC:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update"><span class="toc-number">7.</span> <span class="toc-text">Update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update-2"><span class="toc-number">8.</span> <span class="toc-text">Update #2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update-3"><span class="toc-number">9.</span> <span class="toc-text">Update #3</span></a></li></ol>
                 </div>
             </div>
             
