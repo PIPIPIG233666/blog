@@ -10,7 +10,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="My random sh*t posts,When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMO,"> 
+    <meta name="description" content="My random sh*t posts,
+PrologueWhen I first bricked my brand new Legion 7i back in last August, I was convinced that rese,"> 
     <meta name="author" content="PIPIPIG233666"> 
     <link rel="alternative" href="atom.xml" title="PIPIPIG233666&#39;s blog" type="application/atom+xml"> 
     <link rel="icon" href="/blog/img/favicon.png"> 
@@ -116,13 +117,13 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    4k
+                    5.2k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    4 mins.
+                    5 mins.
                 </span>
                 
                 
@@ -156,36 +157,43 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <p>When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMOS does not have any affect on Lenovo’s mobo. Now it turns out that it is partially true.</p>
-<p><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LenovoLegion/comments/s4yciv/lenovo_legion_amd_users_5900hx5800h_w_unlocked/">Lenovo Legion AMD users (5900HX/5800H) w/ unlocked BIOS FREE Performance gains : LenovoLegion (reddit.com)</a></p>
+            <hr>
+<h2 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h2><p>When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMOS does not have any affect on Lenovo’s mobo. Now it turns out that it is partially true.</p>
+<hr>
+<h2 id="Weird-Reddit-post"><a href="#Weird-Reddit-post" class="headerlink" title="Weird Reddit post"></a>Weird Reddit post</h2><p><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LenovoLegion/comments/s4yciv/lenovo_legion_amd_users_5900hx5800h_w_unlocked/">Lenovo Legion AMD users (5900HX/5800H) w/ unlocked BIOS FREE Performance gains : LenovoLegion (reddit.com)</a></p>
 <p>This reddit post talks about how he used XMP on the AMD counterpart while managing to un-brick using the <code>unplug CMOS </code>method.</p>
 <p>I was shocked at first glance because I was clear that all of us on Discord that tried BIOS UV/OC and bricked did not manage to un-brick using the same method.</p>
 <p>It was clear something was wrong.</p>
-<p>Then I realized that one comment mentioned how his failed to post and only showed a black screen. That catches my eyes and grabs my mind.</p>
-<p>That is: theoretically. on Intel versions of the Legion, there is one option called <code>self-healing</code> that is turned on by default. What is hilarious about this, is that the AMD one has this disabled by default.</p>
+<p>Then, mentioning how his failed to post and only showed a black screen, one comment caught my eyes and grabbed my mind.</p>
 <p>Based on our past experience, whenever the mobo feels not good about the timings/OC/UV you set, it does fail to post, and it does not show a black screen.</p>
+<p>Theoretically. on Intel versions of the Legion, there is one option called <code>self-healing</code> that is turned on by default. What is hilarious about this, is that the AMD one has this disabled by default.</p>
 <p>Why? Because of the <em>stupid</em> <code>self-healing</code> probably. I thought so at the beginning.</p>
-<p>Well, it might not be true. Today I read the comment and was temped to  give RAM OC and CMOS reset a try. (I don’t have to mess around with UV anymore because I figured out that -70mv is the best and I set that in BIOS already)</p>
-<p>My RAM kit is a crappy <code>3200MHz@CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another no-name company. It mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p>
+<p>Well, it might not be true. Today I read the comment and was temped to give RAM OC and CMOS reset a try. (I don’t have to mess around with UV anymore because I figured out that -70mv is the best and I set that in BIOS already)</p>
+<hr>
+<h2 id="My-RAM-kit"><a href="#My-RAM-kit" class="headerlink" title="My RAM kit"></a>My RAM kit</h2><p>My RAM kit is a crappy <code>3200MHz@CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another non-popular American company. The manufactuerer mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p>
 <p><img src="image-20220117115719644.png" alt="CPU-Z"></p>
-<p>My kit came with Micron chips, with the following code printed clearly on the two-sided stick:</p>
-<p>0FE45<br>D9ZFV</p>
+<p>Like I said, my kit came with Micron chips, with the following code printed clearly on the two-sided stick:<br><code>0FE45</code><br><code>D9ZFV</code><br><img src="image-20220117141703003.png" alt="RAM installed"></p>
 <p>2Rx8 chips are embedded on each sides, making it a 32Gx2 Dual Rank kit </p>
-<p>According to Micron documents, it means: 2020-10th_week-E-die-japan-china</p>
+<p>According to Micron documents, it means: <code>2020-10th_week-E-die-japan-china</code></p>
 <p>By looking up in Micron’s database, it corresponds to this:</p>
-<p>Part Number                   FBGA Code<br>MT40A2G8JC-062E:E    D9ZFV</p>
+<p>|Part Number         |  FBGA Code|<br>|MT40A2G8JC-062E:E |    D9ZFV|</p>
+<p><a target="_blank" rel="noopener" href="https://www.micron.com/products/dram/ddr4-sdram/part-catalog/mt40a2g8jc-062e">MT40A2G8JC-062E | Micron Technologies, Inc</a></p>
 <p><img src="image-20220117121249444.png" alt="Stock results, trash as hell"></p>
-<p>Long story short, with the above information in mind, I know that this kit cannot be OC’ed much. I also know that I should disable <code>self-healing</code>  while at it.</p>
-<p>So my first shot was <code>3200MHz, 18-19-19-36@1.35v</code>. This simply did not post. Okay, so I unplugged the battery and CMOS battery. Pressed and hold the power button for like a min. Then plugged them back in. Press the button again, magically, it posted and booted right into Windows.</p>
+<hr>
+<h2 id="Get-hands-dirty"><a href="#Get-hands-dirty" class="headerlink" title="Get hands dirty"></a>Get hands dirty</h2><p>Long story short, with the above information in mind, I know that this kit cannot be OC’ed much. I also know that I should disable <code>self-healing</code>  while at it.</p>
+<p>So my first shot was <code>3200MHz, 18-19-19-36@1.35v</code>. This simply did not post. Okay, so I unplugged the battery and CMOS battery. Pressed and hold the power button for like a min. Then plugged them back in. Pressed the button again, magically, it posted and booted right into Windows.</p>
 <p>Yawn, I know this sucks, so I tried a milder OC, <code>3200MHz, 21-21-21-47@1.2v</code>. This booted just fine. </p>
 <p>I guessed it could be pushed even more, thus next I tried <code>3200MHz, 19-20-20-40@1.35v</code>. And it booted as well. However, as I ran a Cache and Mem test in AIDA64, the screen froze when it’s running the write test.</p>
-<p>I almost gave up, did another trial with <code>3400MHz, 22-22-52@1.35v</code>. Surprisingly, it cripplingly booted!</p>
+<p>I almost gave up, did another trial with <code>3400MHz, 22-22-52@1.35v</code>. Surprisingly, it cripplingly booted and passed the AIDA64 benchmark!</p>
 <p><img src="image-20220117121013282.png" alt="First successful attempt, not great"></p>
 <p>Latency almost dropped by 20%, and read/write increased significantly as well.</p>
-<p>I wanted more so I eventually set it to <code>3400MHz, 20-20-50@1.35v</code>.</p>
+<hr>
+<h2 id="Final-results"><a href="#Final-results" class="headerlink" title="Final results"></a>Final results</h2><p>I wanted more so I eventually set it to <code>3400MHz, 20-20-50@1.35v</code>.</p>
 <p><img src="image-20220117121457778.png" alt="Final attempt"></p>
 <p>It did not pass the TM5 stress test, but it seems fine so far. At least it ran the AIDA64 bench without any issues.</p>
 <p>I’ll check out games and Time spy later today. Hopefully it will weather the stress.</p>
+<hr>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Played <code>Tomb Raider</code>, which I got from <code>Epic Games</code>, for 30 minutes, and it seems all good. Played <code>League of Legends</code> for another 23 minutes, no BSOD yet.</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -242,6 +250,13 @@
             </div>
             
             
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>Contents</h4>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prologue"><span class="toc-number">1.</span> <span class="toc-text">Prologue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Weird-Reddit-post"><span class="toc-number">2.</span> <span class="toc-text">Weird Reddit post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-RAM-kit"><span class="toc-number">3.</span> <span class="toc-text">My RAM kit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-hands-dirty"><span class="toc-number">4.</span> <span class="toc-text">Get hands dirty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-results"><span class="toc-number">5.</span> <span class="toc-text">Final results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update"><span class="toc-number">6.</span> <span class="toc-text">Update</span></a></li></ol>
+                </div>
+            </div>
             
             
         </div>
