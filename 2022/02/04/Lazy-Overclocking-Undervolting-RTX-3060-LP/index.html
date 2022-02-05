@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>QTI Bluetooth Stack on Android 12 - PIPIPIG233666&#39;s blog</title>
+    <title>Lazy Overclocking &amp; Undervolting RTX 3060 LP - PIPIPIG233666&#39;s blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="My random sh*t posts,topic:twelve-qti-bt-stack · Gerrit Code Review (lineageos.org)
-It took me a while to port it to Lin,"> 
+    <meta name="description" content="My random sh*t posts,PrologueAfter the Lenovo Tech came to my home and replaced my heatsink, I’m able to mess around wit,"> 
     <meta name="author" content="PIPIPIG233666"> 
     <link rel="alternative" href="atom.xml" title="PIPIPIG233666&#39;s blog" type="application/atom+xml"> 
     <link rel="icon" href="/blog/img/favicon.png"> 
@@ -75,7 +74,7 @@ It took me a while to port it to Lin,">
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/blog/img/favicon.png" alt="" data-url="https://pppig236.com/blog">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">QTI Bluetooth Stack on Android 12</h3>
+        <h3 class="subtitle">Lazy Overclocking & Undervolting RTX 3060 LP</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -105,25 +104,25 @@ It took me a while to port it to Lin,">
         <div class="else">
             <p class="animated fadeInDown">
                 
-                <a href="/categories/General"><b>「
-                    </b>GENERAL<b> 」</b></a>
+                <a href="/categories/Overclocking"><b>「
+                    </b>OVERCLOCKING<b> 」</b></a>
                 
-                January 16, 2022
+                February 04, 2022
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/blog/2022/01/16/QTI-Bluetooth-Stack-on-Android-12/" title="QTI Bluetooth Stack on Android 12" class="">QTI Bluetooth Stack on Android 12</a>
+            <h3 class="post-title animated fadeInDown"><a href="/blog/2022/02/04/Lazy-Overclocking-Undervolting-RTX-3060-LP/" title="Lazy Overclocking &amp; Undervolting RTX 3060 LP" class="">Lazy Overclocking &amp; Undervolting RTX 3060 LP</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    811
+                    2.8k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    1 mins.
+                    3 mins.
                 </span>
                 
                 
@@ -136,7 +135,7 @@ It took me a while to port it to Lin,">
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/blog/tags/Android/" rel="tag">Android</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/blog/tags/General/" rel="tag">General</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/blog/tags/GA106-B/" rel="tag">GA106-B</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/blog/tags/NVIDIA/" rel="tag">NVIDIA</a></li></ul>
             
         </div>
     </div>
@@ -157,13 +156,43 @@ It took me a while to port it to Lin,">
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <p><a target="_blank" rel="noopener" href="https://review.lineageos.org/q/topic:twelve-qti-bt-stack">topic:twelve-qti-bt-stack · Gerrit Code Review (lineageos.org)</a></p>
-<p>It took me a while to port it to Lineage, after hours of cherry-picking, it was finally done last night.</p>
-<p>Funny thing about this is that CAF guys actually added proprietary features, aka bt adv audio to the open source code.</p>
-<p>Well, I can understand that it is conditional, but some of the includes aren’t handled the same way which literally breaks the build right away.</p>
-<p>As for bluetooth, QSSI is great: the Android 11 vendor stack works just fine, with no missing symbols or whatever.</p>
-<p>Bluetooth is probably one of the <strong>only</strong> few things that one can utilize from QSSI.</p>
-<p>I’ll get into WiFi display today while at it.</p>
+            <h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><p>After the Lenovo Tech came to my home and replaced my heatsink, I’m able to mess around with higher TDP on my 3060 again.</p>
+<h1 id="My-3060"><a href="#My-3060" class="headerlink" title="My 3060"></a>My 3060</h1><p>I don’t really know how good my 3060 is binned, but it seems pretty decent to me.</p>
+<p><img src="image-20220204212659248.png" alt="GPU-Z"></p>
+<h2 id="Micron-VRAM"><a href="#Micron-VRAM" class="headerlink" title="Micron VRAM"></a>Micron VRAM</h2><p>I don’t mine, thus in my daily usage(casual gaming with AAA title like Tomb Raider and GTA and E-Sports titles like LOL and CSGO), I don’t really feel a difference comparing to my old mobo that has Samsung VRAM. However, Micron failed even with mild OC due to hot temps. Hence I have to stick with +400 on M.CLK.</p>
+<h1 id="OC-Procedure"><a href="#OC-Procedure" class="headerlink" title="OC Procedure"></a>OC Procedure</h1><h3 id="Open-up-curve-editor"><a href="#Open-up-curve-editor" class="headerlink" title="Open up curve editor"></a>Open up curve editor</h3><p>I’m a lazy guy and I don’t like gay lines. Therefore, I just open up MSI AfterBurner and jump right in onto the curve editor. </p>
+<p><img src="image-20220204213505546.png" alt="Stock Curve"></p>
+<h3 id="Drag-the-whole-curve"><a href="#Drag-the-whole-curve" class="headerlink" title="Drag the whole curve"></a>Drag the whole curve</h3><p>It is a lazy method because of how simple it is to be achieving what I wanted: </p>
+<p><img src="image-20220205080809360.png" alt="After OC&amp;UV"></p>
+<p>Basically I just drag the point at .85V up to 1830-1850 ish, then Re-select the points right to 1V to the bottom. And here we are, the OC&amp;UV is done!</p>
+<h3 id="VRAM-OC"><a href="#VRAM-OC" class="headerlink" title="VRAM OC"></a>VRAM OC</h3><p>Simply adding 400 on the M.CLK is more than enough.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>VRAM OC(Micron)</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>400</td>
+<td>&#9989;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>800</td>
+<td>&#10062;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1200</td>
+<td>&#10062;</td>
+</tr>
+</tbody></table>
+<p>Micron VRAM runs really hot thus anything higher than or equal to 800 gives a <code>CLOCK_WATCHDOG_TIMEOUT</code>. (Yeah, it’s hilarious how GPU OC causes a CPU often related BSOD)</p>
+<h1 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h1><p><img src="Timespy.png" alt="r/LenovoLegion - Legion7i 11800H 3060 max OC"></p>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>By default, the 3060 LP could only get to 8512 on Timespy, with this no-brainer +189 on C.CLK and +400 on M.CLK, a 10% increase in performance is clearly noticeable.</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -220,6 +249,13 @@ It took me a while to port it to Lin,">
             </div>
             
             
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>Contents</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Prologue"><span class="toc-number">1.</span> <span class="toc-text">Prologue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#My-3060"><span class="toc-number">2.</span> <span class="toc-text">My 3060</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Micron-VRAM"><span class="toc-number">2.1.</span> <span class="toc-text">Micron VRAM</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OC-Procedure"><span class="toc-number">3.</span> <span class="toc-text">OC Procedure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Open-up-curve-editor"><span class="toc-number">3.0.1.</span> <span class="toc-text">Open up curve editor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drag-the-whole-curve"><span class="toc-number">3.0.2.</span> <span class="toc-text">Drag the whole curve</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VRAM-OC"><span class="toc-number">3.0.3.</span> <span class="toc-text">VRAM OC</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Result"><span class="toc-number">4.</span> <span class="toc-text">Result</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">5.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+                </div>
+            </div>
             
             
         </div>
