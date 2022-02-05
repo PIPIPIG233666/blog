@@ -1,6 +1,4 @@
+
 [submodule "themes/obsidian"]
 	path = themes/obsidian
-	url = git@github.com:bennyxguo/hexo-theme-obsidian.git
-[submodule "themes/aurora"]
-	path = themes/aurora
-	url = git@github.com:auroral-ui/hexo-theme-aurora.git
+	url = https://github.com/bennyxguo/hexo-theme-obsidian.git
