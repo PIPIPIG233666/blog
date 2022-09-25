@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: PIPIPIG233666's blog
+title: pppig236.com
 subtitle: ''
-description: 'My random sh*t posts'
+description: ''
 keywords:
-author: PIPIPIG233666
+author: Weikai Kong
 language: en
-timezone: 'America/Detroit'
+timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://pppig236.com/blog
-permalink: :year/:month/:day/:title/
+url: http://example.com
+permalink: /post/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,18 +40,18 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -97,11 +97,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: obsidian
+theme: aurora
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@github.com:PIPIPIG233666/blog.git
-  branch: main
+  type: ''
