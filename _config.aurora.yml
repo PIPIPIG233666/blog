@@ -12,7 +12,7 @@ site:
   subtitle: Weikai's Blog
   author: PIPIPIG233666
   nick: Weiky
-  description:
+  description: Random sh*t posts on hardware, software, and overclocking!
   link: '/'
   language: en
   multi_language: false
@@ -34,7 +34,7 @@ authors:
      name: Weikai Kong
      avatar: https://avatars.githubusercontent.com/u/43439674
      link: https://github.com/PIPIPIG233666
-     description: 'There is nothing good or bad, but thinking makes it so.'
+     description: There is nothing good or bad, but thinking makes it so.
      socials:
        github: https://pppig236.com
 
@@ -43,7 +43,7 @@ authors:
 #！ @docs https://aurora.tridiamond.tech/guide/menu.html
 #! ---------------------------------------------------------------
 menu:
-  About: true
+  About: false
   Tags: true
   Archives: true
 
@@ -53,7 +53,7 @@ menu:
 #! ---------------------------------------------------------------
 theme:
   dark_mode: true
-  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
   feature: true
   gradient:
     color_1: '#24c6dc'
@@ -137,8 +137,8 @@ busuanzi:
 copy_protection:
   enable: true
   author:
-    cn: 作者
-    en: Author
+    cn: 孔维楷
+    en: Weikai Kong
   link:
     cn: 本文来自于
     en: Article is from
