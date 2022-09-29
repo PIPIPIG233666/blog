@@ -19,19 +19,21 @@ To be more accurate, 3800MHz w/ 1900MHz FCLK is as far as it could reach.
 
 |      | RAM OC | POST   | Stable |
 | ---- | --------------- | -------- | -------- |
-| 1    | 3200@C14             | &#9989;  | &#10062; |
-| 2    | 3600@C16             | &#9989; | &#9989; (stock) |
-| 3    | **3800@C16**        | &#9989; | &#9989; |
-| 4    | 4200@C20            | &#9989; | &#10062;(? Zen3 CPU IMC sucks!) |
+| 1    | 3200@C14             | :heavy_check_mark: | :heavy_multiplication_x: |
+| 2    | 3600@C16             | :heavy_check_mark: | :heavy_check_mark:(stock) |
+| 3    | **3800@C16**        | :heavy_check_mark: | :heavy_check_mark: |
+| 4    | 4200@C20            | :heavy_check_mark: | :heavy_multiplication_x: (? Zen3 CPU IMC sucks!) |
 
 
 
 Anyway, I'll update with more details. Right now, I have been running this OC configuration for like a month now, everything is looking solid.
 It was even functioning well at 70 degrees Celsius, but Samsung's legendary B-die suffers from anything higher than 50.
 
-![image.png](https://s2.loli.net/2022/08/04/oAhnvE9f1Npqzc3.png)Go! Micron B-die!
+![image.png](micron-b-die-16GB-overclocking-showcase/oAhnvE9f1Npqzc3.png)
+
+Go! Micron B-die!
 
 # Results
 
-![final oc - bench - 64gb.png](https://s2.loli.net/2022/08/04/7KB9mCPfnMAX2J5.png)
+![final oc - bench - 64gb.png](micron-b-die-16GB-overclocking-showcase/7KB9mCPfnMAX2J5.png)
 
