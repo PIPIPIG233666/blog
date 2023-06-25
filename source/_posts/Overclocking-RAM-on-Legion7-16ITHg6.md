@@ -4,6 +4,7 @@ title: Overclocking non-XMP RAM attempt on Legion7-16ITHg6
 date: 2022-01-17 11:34:47
 categories:
 - ['Overclocking']
+feature: false
 tags:
 - 'Intel'
 - 'BIOS'

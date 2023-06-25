@@ -3,6 +3,7 @@ title: Lazy Overclocking & Undervolting RTX 3060 LP
 date: 2022-02-04 21:22:10
 categories:
 - ['Overclocking']
+feature: false
 tags:
 - 'NVIDIA'
 - 'GA106-B'
