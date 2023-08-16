@@ -1,6 +1,6 @@
 ---
 title: Water-cooling Loop Showcase W Tuf GT 502
-date: 2022-09-28 20:51:35
+date: 2023-6-29 08:14
 categories: ['Overclocking']
 tags:
 - 'AMD'
