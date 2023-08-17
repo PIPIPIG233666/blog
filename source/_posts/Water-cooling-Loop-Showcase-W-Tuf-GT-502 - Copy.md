@@ -1,12 +1,13 @@
 ---
-title: Water-cooling Loop Showcase W Tuf GT 502
+title: Absolute beast! Water-cooling Loop Showcase Feat. Tuf GT 502
 date: 2023-6-29 08:14
-categories: ['Overclocking']
+categories: ['Chiphell']
 tags:
 - 'AMD'
 - 'PC'
 - 'Water-cooling'
-cover: https://s2.loli.net/2023/06/25/92TBSiKRO6xtfQJ.jpg
+- 'ASUS'
+banner_img: https://s2.loli.net/2023/06/25/92TBSiKRO6xtfQJ.jpg
 ---
 
 ![mayhems package](Water-cooling-Loop-Showcase-W-Tuf-GT-502/mayhems-package.jpg)
