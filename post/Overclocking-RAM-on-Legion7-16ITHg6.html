@@ -1,0 +1,971 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Weikai Kong">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Prologue· When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMOS does not have any affect on Lenovo’s mobo. Now it turns out that it is partially true.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Overclocking non-XMP RAM attempt on Legion7-16ITHg6">
+<meta property="og:url" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6.html">
+<meta property="og:site_name" content="Weiky&#39;s blog">
+<meta property="og:description" content="Prologue· When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMOS does not have any affect on Lenovo’s mobo. Now it turns out that it is partially true.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117115719644.png">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117141703003.png">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121249444.png">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121013282.png">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121457778.png">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117151242978.png">
+<meta property="og:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117170758947.png">
+<meta property="article:published_time" content="2022-01-17T16:34:47.000Z">
+<meta property="article:modified_time" content="2023-08-16T14:58:37.421Z">
+<meta property="article:author" content="Weikai Kong">
+<meta property="article:tag" content="Intel">
+<meta property="article:tag" content="BIOS">
+<meta property="article:tag" content="Tigerlake-H">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117115719644.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Overclocking non-XMP RAM attempt on Legion7-16ITHg6 - Weiky&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/blog/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"dev.pppig236.com","root":"/blog/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/blog/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/blog/asset/SD-BG/1.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Overclocking non-XMP RAM attempt on Legion7-16ITHg6"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Weikai Kong
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-01-17 11:34" pubdate>
+          January 17, 2022 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          204 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          2 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> views
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Overclocking non-XMP RAM attempt on Legion7-16ITHg6</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    Last updated on 2023-08-16T10:58:37-04:00
+                  
+                  
+
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <hr>
+<h2 id="Prologue">Prologue<a class="anchor" href="#Prologue">·</a></h2>
+<p>When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMOS does not have any affect on Lenovo’s mobo. Now it turns out that it is partially true.</p>
+<hr>
+<h2 id="Weird-Reddit-post">Weird Reddit post<a class="anchor" href="#Weird-Reddit-post">·</a></h2>
+<p><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LenovoLegion/comments/s4yciv/lenovo_legion_amd_users_5900hx5800h_w_unlocked/">Lenovo Legion AMD users (5900HX/5800H) w/ unlocked BIOS FREE Performance gains : LenovoLegion (reddit.com)</a></p>
+<p>This reddit post talks about how he used XMP on the AMD counterpart while managing to un-brick using the <code>unplug CMOS </code>method.</p>
+<p>I was shocked at first glance because I was clear that all of us on Discord that tried BIOS UV/OC and bricked did not manage to un-brick using the same method.</p>
+<p>It was clear something was wrong.</p>
+<p>Then, mentioning how his failed to post and only showed a black screen, one comment caught my eyes and grabbed my mind.</p>
+<p>Based on our past experience, whenever the mobo feels not good about the timings/OC/UV you set, it does fail to post, and it does not show a black screen.</p>
+<p>Theoretically. on Intel versions of the Legion, there is one option called <code>self-healing</code> that is turned on by default. What is hilarious about this, is that the AMD one has this disabled by default.</p>
+<p>Why? Because of the <em>stupid</em> <code>self-healing</code> probably. I thought so at the beginning.</p>
+<p>Well, it might not be true. Today I read the comment and was temped to give RAM OC and CMOS reset a try. (I don’t have to mess around with UV anymore because I figured out that -70mv is the best and I set that in BIOS already)</p>
+<hr>
+<h2 id="My-RAM-kit">My RAM kit<a class="anchor" href="#My-RAM-kit">·</a></h2>
+<p>My RAM kit is a crappy <code>3200MHz, CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another non-popular American company. The manufacturer mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p>
+<p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117115719644.png" srcset="/blog/img/loading.gif" lazyload alt="CPU-Z"></p>
+<p>Like I said, my kit came with Micron chips, with the following code printed clearly on the two-sided stick:
+<code>0FE45</code>
+<code>D9ZFV</code>
+<img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117141703003.png" srcset="/blog/img/loading.gif" lazyload alt="RAM installed"></p>
+<p>2Rx8 chips are embedded on each sides, making it a 32Gx2 Dual Rank kit</p>
+<p>According to Micron documents, it means: <code>2020-10th_week-E-die-japan-china</code></p>
+<p>By looking up in Micron’s database, it corresponds to this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Part Number</th>
+<th style="text-align:center">FBGA Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">MT40A2G8JC-062E:E</td>
+<td style="text-align:center">D9ZFV</td>
+</tr>
+</tbody>
+</table>
+<p><a target="_blank" rel="noopener" href="https://www.micron.com/products/dram/ddr4-sdram/part-catalog/mt40a2g8jc-062e">MT40A2G8JC-062E | Micron Technologies, Inc</a></p>
+<p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121249444.png" srcset="/blog/img/loading.gif" lazyload alt="Stock results, trash as hell"></p>
+<hr>
+<h2 id="Get-hands-dirty">Get hands dirty<a class="anchor" href="#Get-hands-dirty">·</a></h2>
+<p>Long story short, with the above information in mind, I know that this kit cannot be OC’ed much. I also know that I should disable <code>self-healing</code>  while at it.</p>
+<p>So my first shot was <code>3200MHz, 18-19-19-36@1.35v</code>. This simply did not post. Okay, so I unplugged the battery and CMOS battery. Pressed and hold the power button for like a min. Then plugged them back in. Pressed the button again, magically, it posted and booted right into Windows.</p>
+<p>Yawn, I know this sucks, so I tried a milder OC, <code>3200MHz, 21-21-21-47@1.2v</code>. This booted just fine.</p>
+<p>I guessed it could be pushed even more, thus next I tried <code>3200MHz, 19-20-20-40@1.35v</code>. And it booted as well. However, as I ran a Cache and Mem test in AIDA64, the screen froze when it’s running the write test.</p>
+<p>I almost gave up, did another trial with <code>3400MHz, 22-22-52@1.35v</code>. Surprisingly, it cripplingly booted and passed the AIDA64 benchmark!</p>
+<p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121013282.png" srcset="/blog/img/loading.gif" lazyload alt="First successful attempt, not great"></p>
+<p>Latency almost dropped by 20%, and read/write increased significantly as well.</p>
+<hr>
+<h2 id="Final-results">Final results<a class="anchor" href="#Final-results">·</a></h2>
+<p>I wanted more so I eventually set it to <code>3400MHz, 20-20-50@1.35v</code>.</p>
+<p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121457778.png" srcset="/blog/img/loading.gif" lazyload alt="Final attempt"></p>
+<p>It did not pass the TM5 stress test, but it seems fine so far. At least it ran the AIDA64 bench without any issues.</p>
+<p>I’ll check out games and Time spy later today. Hopefully it will weather the stress.</p>
+<h2 id="Data-analysis">Data analysis<a class="anchor" href="#Data-analysis">·</a></h2>
+<h3 id="Before-OC-baseline">Before OC (baseline):<a class="anchor" href="#Before-OC-baseline">·</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">CLK</th>
+<th style="text-align:center">CL</th>
+<th style="text-align:center">tRCD/RP</th>
+<th style="text-align:center">tRAS</th>
+<th style="text-align:center">tRFC</th>
+<th style="text-align:center">R</th>
+<th style="text-align:center">W</th>
+<th style="text-align:center">Cp</th>
+<th style="text-align:center">Latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">3200</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">560</td>
+<td style="text-align:center">44270</td>
+<td style="text-align:center">43619</td>
+<td style="text-align:center">41191</td>
+<td style="text-align:center">110</td>
+</tr>
+</tbody>
+</table>
+<h3 id="After-OC">After OC:<a class="anchor" href="#After-OC">·</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Result</th>
+<th style="text-align:center">CLK</th>
+<th style="text-align:center">CL</th>
+<th style="text-align:center">tRCD/RP</th>
+<th style="text-align:center">tRAS</th>
+<th style="text-align:center">tRFC</th>
+<th style="text-align:center">R</th>
+<th style="text-align:center">W</th>
+<th style="text-align:center">Cp</th>
+<th style="text-align:center">Latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">❎</td>
+<td style="text-align:center">3200</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">480</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+</tr>
+<tr>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">3200</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">47</td>
+<td style="text-align:center">480</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+</tr>
+<tr>
+<td style="text-align:center">❎</td>
+<td style="text-align:center">3200</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">480</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N//A</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">N/A</td>
+</tr>
+<tr>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">3400</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">560</td>
+<td style="text-align:center">49942</td>
+<td style="text-align:center">48111</td>
+<td style="text-align:center">66065</td>
+<td style="text-align:center">85</td>
+</tr>
+<tr>
+<td style="text-align:center">❎</td>
+<td style="text-align:center">3400</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">560</td>
+<td style="text-align:center">52894</td>
+<td style="text-align:center">48343</td>
+<td style="text-align:center">47989</td>
+<td style="text-align:center">85</td>
+</tr>
+<tr>
+<td style="text-align:center">❎</td>
+<td style="text-align:center">3400</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">51</td>
+<td style="text-align:center">560</td>
+<td style="text-align:center">52244</td>
+<td style="text-align:center">48173</td>
+<td style="text-align:center">51571</td>
+<td style="text-align:center">85</td>
+</tr>
+<tr>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">3400</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">51</td>
+<td style="text-align:center">560</td>
+<td style="text-align:center">52352</td>
+<td style="text-align:center">48136</td>
+<td style="text-align:center">51306</td>
+<td style="text-align:center">86</td>
+</tr>
+</tbody>
+</table>
+<h5 id="Memory-clocks-are-measured-in-MHz-Read-write-and-copy-speeds-are-measured-in-MB-s-Latencies-are-measured-in-ns"><em>Memory clocks are measured in MHz. Read, write and copy speeds are measured in MB/s. Latencies are measured in ns.</em><a class="anchor" href="#Memory-clocks-are-measured-in-MHz-Read-write-and-copy-speeds-are-measured-in-MB-s-Latencies-are-measured-in-ns">·</a></h5>
+<hr>
+<h2 id="Update">Update<a class="anchor" href="#Update">·</a></h2>
+<p>Played <code>Tomb Raider</code>, which I got from <code>Epic Games</code>, for 30 minutes, and it seems all good. Played <code>League of Legends</code> for another 23 minutes, no BSOD yet.</p>
+<hr>
+<h2 id="Update-2">Update #2<a class="anchor" href="#Update-2">·</a></h2>
+<p>It gave me a frozen screen while playing my second Aram game in LOL.</p>
+<p>(Sigh…)</p>
+<p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117151242978.png" srcset="/blog/img/loading.gif" lazyload alt="3400MHz@CL21"></p>
+<p>As you can see I bumped the timings a bit, and it does not seem to be losing performance in the benchmark. Let’s see if this can hold any longer.</p>
+<hr>
+<h2 id="Update-3">Update #3<a class="anchor" href="#Update-3">·</a></h2>
+<p>Well, it crashed again. Now I’ve slackened the timings even more, and I am running the TM5 with <code>Extreme1@anta777</code> again; it’s been 1 hour without an error.</p>
+<p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117170758947.png" srcset="/blog/img/loading.gif" lazyload alt="TM5, Extreme1@anta777"></p>
+<p>I guess I should work on timings more next time it crashes(it probably never will).</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/Overclocking/" class="category-chain-item">Overclocking</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/blog/tags/Intel/" class="print-no-link">#Intel</a>
+      
+        <a href="/blog/tags/BIOS/" class="print-no-link">#BIOS</a>
+      
+        <a href="/blog/tags/Tigerlake-H/" class="print-no-link">#Tigerlake-H</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Overclocking non-XMP RAM attempt on Legion7-16ITHg6</div>
+      <div>https://dev.pppig236.com/blog/post/Overclocking-RAM-on-Legion7-16ITHg6.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Weikai Kong</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>January 17, 2022</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Updated on</div>
+          <div>August 16, 2023</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP.html" title="Lazy Overclocking &amp; Undervolting RTX 3060 LP">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Lazy Overclocking &amp; Undervolting RTX 3060 LP</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/blog/post/Using-sed-to-edit-commit-header.html" title="Using sed to edit commit header">
+                        <span class="hidden-mobile">Using sed to edit commit header</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/blog/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'en'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/en.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/blog/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/blog/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

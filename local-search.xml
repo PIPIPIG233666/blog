@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Wi-Fi DOA! ASUS RMA horrible experience</title>
+    <link href="/blog/post/ASUS-rma.html"/>
+    <url>/blog/post/ASUS-rma.html</url>
+    
+    <content type="html"><![CDATA[<h3 id="简单的时间线">简单的时间线<a class="anchor" href="#简单的时间线">·</a></h3><ul><li>7/7日突然主板掉电卡黄灯，重置/重刷BIOS没用，短接开机后电源风扇狂转（短路保护了应该）</li><li>7/9日放弃治疗准备申请rma</li><li>7/10日申请，支付了25刀作为FedEx邮费</li><li>7/21日搭顺风车去FedEx寄件</li><li>7/25日华硕印第安纳维修站到货</li><li>7/28日显示维修完成已FedEx发货</li><li>7/31日到货</li></ul><h3 id="逼逼赖赖">逼逼赖赖<a class="anchor" href="#逼逼赖赖">·</a></h3><p>昨天收到打人rma换新的一块工包主板，ssd马甲有轻微划痕。背面有油渍（这点就能看出来是新的，祖传漏油），姑且算他99新。</p><p>然而高兴得太早。在开开心心把主板装回水冷，擦电，开机，咦，轻松点亮后，没有网？？？？？然后系统开机还慢的要死，之前一两圈就进系统了，现在十几圈都不在话下。</p><p>😦</p><p>确认了不是驱动问题（我c8dh同ax200一样的最新驱动没问题）放过静电，重置过BIOS试过网上改注册表</p><p>都没用。。。看来是不是又得继续换了。。。（看来可以准备找亚马逊退钱了，再不好的话）</p><p>在绝望之际想到我还有一块AX210是买给之前用来救急的prime b450m a ii用的，刚好准备试试换一下能不能用，不能就只能给打人CEO发邮件投诉了（不想再付邮费。。。）</p><p>拆开先单独插主板槽里，嗯，还是代码10，接着换我自己的210, 咦，居然可以了，而且蓝牙也能用。</p><p>现在在烤内存，这换了主板所有超频又得重新调，惆怅啊</p><p>顺便把二奶机全部家当换进了10刀淘的新豪斯nr200。之前a4 h2o太窄，放不下普通D5，换到ssupd，还是够呛。最后兜兜转转还是传统前置电源的方便。上面有点丑前脸在固定了水泵的前提下依然可以放俩2.5，感觉还不错</p><h3 id="更新">更新<a class="anchor" href="#更新">·</a></h3><p>在这双槽主板和900转的A12X25直吹加持下，轻轻松松稳住了4000 c16 1：1 FCLK：MCLK sync，打起撸啊撸真流畅 😃在大奶机上确定了网卡的死讯，插上就蓝屏，服了我甚至觉得这主板99新就是因为一开始是网卡坏了给退回去的</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Chiphell</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>AMD</tag>
+      
+      <tag>PC</tag>
+      
+      <tag>ASUS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Absolute beast! Water-cooling Loop Showcase Feat. Tuf GT 502</title>
+    <link href="/blog/post/Water-cooling-Loop-Showcase-W-Tuf-GT-502%20-%20Copy.html"/>
+    <url>/blog/post/Water-cooling-Loop-Showcase-W-Tuf-GT-502%20-%20Copy.html</url>
+    
+    <content type="html"><![CDATA[<p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/mayhems-package.jpg" alt="mayhems package"></p><h3 id="先简单开箱个全世界好评推荐的Mayhems-X1冷液">先简单开箱个全世界好评推荐的Mayhems X1冷液<a class="anchor" href="#先简单开箱个全世界好评推荐的Mayhems-X1冷液">·</a></h3><p>是在PPCS买的，佛罗里达到密歇根走最便宜的UPS Ground也花了三天，包裹很普通，就是Mayhems的经典包装打开之后像牛奶罐</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/mayhems-jar.jpg" alt="mayhems jar"></p><p>这是已经加过水之后剩的，按照网友的说法这冷液两年一换都有点多余别的地方也没啥特别的，感觉比我之前用的Koolance的702好闻些，沾到手上也比较好清理</p><h3 id="进入正题">进入正题<a class="anchor" href="#进入正题">·</a></h3><p>之前大奶机是仨D5（VPP655+2xVPP APEX）推360+1260，后来觉得A家七代的泵太吵了，把二奶机上换成了655，调最低一档带默频的5700G （只超了内存4000 C16+FCLK同步+核显2.3GHz)，除了震动是啥声也没有了，我滴世界终于清净了</p><p>由于没有多余的AM4冷头，加上之前其实买错了搞了普通版的冷头比较难受，就把那个拿给二奶机用了。盯着剩下的俩D5和之前买了妹装的Blackice GTS360，我陷入了沉思。因为少了一个D5，推2x360 + 1260必然会降低流速，所以我这次构思水路的时候尽量选择少用/不用弯头。 在构思的时候参考了很多第八届机霸参赛选手以及别的502的分体方案，但是说实话，没见到几个用后置冷排支架的，更多的是用侧边。然而坑爹的就是黑冰自己的冷排比贼船的长了2毫米，然后侧边就塞不进去了。。。无语了。不过好在华硕的海景房有后置冷排支持，轻松安装。</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/back-rad.jpg" alt="back rad"></p><p>比较乱但是我其实已经理过了，不然后排的风扇一直会打风扇线，好在用俩轧带固定了一下就没问题了</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/back-case.jpg" alt="back case"></p><p>具体配置如下</p><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs mathematica"><span class="hljs-variable">CPU</span>   <span class="hljs-variable">AMD</span> <span class="hljs-number">5900</span><span class="hljs-variable">X</span><br>主板   华硕 玩家国度 <span class="hljs-variable">ROG</span> <span class="hljs-variable">Crosshair</span> <span class="hljs-variable">VIII</span> <span class="hljs-variable">Dark</span> <span class="hljs-variable">Hero</span><br>内存   镁光英睿达 铂胜 <span class="hljs-variable">DDR4</span><span class="hljs-operator">-</span><span class="hljs-number">3200</span> <span class="hljs-number">32</span><span class="hljs-variable">Gx2</span><br><span class="hljs-variable">SSD</span>   <span class="hljs-variable">SK</span>海力士 白金 <span class="hljs-variable">P41</span> <span class="hljs-number">1</span><span class="hljs-variable">TB</span> <span class="hljs-operator">+</span> <span class="hljs-variable">Intel</span> <span class="hljs-variable">P1600X</span> <span class="hljs-number">118</span><span class="hljs-variable">GB</span> <span class="hljs-operator">+</span> 西部数据 <span class="hljs-variable">SN640</span> <span class="hljs-number">7.68</span><span class="hljs-variable">TB</span><br>显卡   华硕 玩家国度 <span class="hljs-variable">ROG</span> 猛禽 <span class="hljs-number">6800</span> <span class="hljs-variable">XT</span> <span class="hljs-variable">LC</span><br>机箱   华硕 <span class="hljs-variable">TUF</span> <span class="hljs-variable">GT502</span> 弹药箱 黑色<br>电源   海盗船 <span class="hljs-variable">HX1000i</span> 白金牌全模组电源<br>显卡支架 英特尔 <span class="hljs-variable">DC</span> <span class="hljs-variable">P3600</span> <span class="hljs-operator">+</span> 华硕 玩家国度 <span class="hljs-variable">ROG</span> <span class="hljs-variable">Herculx</span><br><br>水冷配件<br><span class="hljs-variable">CPU</span>  <span class="hljs-variable">Aquacomputer</span> <span class="hljs-variable">cuplex</span> <span class="hljs-variable">kryos</span> <span class="hljs-variable">NEXT</span> <span class="hljs-variable">AM4</span> <span class="hljs-operator">/</span> <span class="hljs-number">3000</span><span class="hljs-operator">,</span> <span class="hljs-variable">acetal</span> <span class="hljs-operator">/</span> <span class="hljs-variable">nickel</span><br><span class="hljs-variable">GPU</span>  <span class="hljs-variable">EKWB</span> <span class="hljs-variable">EK</span><span class="hljs-operator">-</span><span class="hljs-variable">Quantum</span> <span class="hljs-variable">Vector</span> <span class="hljs-variable">Strix</span> <span class="hljs-variable">RX</span> <span class="hljs-number">6800</span><span class="hljs-operator">/</span><span class="hljs-number">6900</span> <span class="hljs-variable">GPU</span> <span class="hljs-variable">Water</span> <span class="hljs-built_in">Block</span><span class="hljs-operator">,</span> <span class="hljs-built_in">D</span><span class="hljs-operator">-</span><span class="hljs-variable">RGB</span><span class="hljs-operator">,</span> <span class="hljs-variable">Nickel</span><span class="hljs-operator">/</span><span class="hljs-variable">Acetal</span><br>泵      <span class="hljs-variable">Alphacool</span> <span class="hljs-variable">VPP</span> <span class="hljs-variable">Apex</span> <span class="hljs-variable">Pump</span> <span class="hljs-variable">x</span> <span class="hljs-number">2</span><br>盖  <span class="hljs-variable">Alphacool</span> <span class="hljs-variable">Eisdecke</span> <span class="hljs-variable">Dual</span> <span class="hljs-variable">D5</span> <span class="hljs-variable">Pump</span> <span class="hljs-built_in">Top</span><span class="hljs-operator">,</span> <span class="hljs-variable">Plexi</span><br>箱     <span class="hljs-variable">Bitspower</span> <span class="hljs-variable">Water</span> <span class="hljs-variable">TanK</span> <span class="hljs-variable">Z</span><span class="hljs-operator">-</span><span class="hljs-variable">Multi</span> <span class="hljs-variable">Ultra</span> <span class="hljs-number">100</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">POM</span> <span class="hljs-variable">Version</span><span class="hljs-punctuation">)</span><br>快拧  <span class="hljs-variable">Barrowch</span> <span class="hljs-variable">Compression</span> <span class="hljs-variable">Fitting</span> <span class="hljs-variable">Soft</span> <span class="hljs-variable">Tubing</span> <span class="hljs-operator">-</span> <span class="hljs-built_in">Black</span><br><span class="hljs-number">45</span>° <span class="hljs-operator">+</span> <span class="hljs-number">60</span>°弯头 <span class="hljs-operator">+</span> <span class="hljs-variable">QDC</span>快插  <span class="hljs-variable">Koolance</span> <br>内置排    <span class="hljs-variable">Blackice</span> <span class="hljs-variable">GTS</span> <span class="hljs-number">360</span>排 <span class="hljs-operator">+</span> <span class="hljs-variable">X</span><span class="hljs-operator">-</span><span class="hljs-variable">flow</span><br>外置排    <span class="hljs-variable">Alphacool</span> <span class="hljs-variable">NexXxoS</span> <span class="hljs-variable">XT45</span> <span class="hljs-built_in">Full</span> <span class="hljs-variable">Copper</span> <span class="hljs-number">1260</span><span class="hljs-variable">mm</span> <span class="hljs-variable">SuperNova</span><br>排风扇   猫头鹰 <span class="hljs-variable">A12x25</span> <span class="hljs-variable">x5</span> <span class="hljs-operator">+</span> <span class="hljs-variable">A20</span> <span class="hljs-variable">x</span> <span class="hljs-number">4</span> <span class="hljs-operator">+</span> 联力 积木风扇 <span class="hljs-variable">SL</span><span class="hljs-operator">-</span><span class="hljs-variable">INF</span> <span class="hljs-number">120</span> <span class="hljs-variable">x</span> <span class="hljs-number">3</span><br>液  <span class="hljs-variable">Mayhems</span> <span class="hljs-variable">X1</span> <span class="hljs-variable">Coolant</span> <span class="hljs-variable">Premix</span><span class="hljs-operator">,</span> <span class="hljs-number">5</span><span class="hljs-variable">L</span><span class="hljs-operator">,</span> <span class="hljs-variable">UV</span> <span class="hljs-built_in">Red</span><br>管  <span class="hljs-variable">EK</span><span class="hljs-operator">-</span><span class="hljs-built_in">Tube</span> <span class="hljs-variable">ZMT</span> <span class="hljs-variable">Rubber</span> <span class="hljs-number">3</span><span class="hljs-operator">/</span><span class="hljs-number">4</span><span class="hljs-string">&quot; x 1/2&quot;</span> <span class="hljs-operator">+</span> <span class="hljs-number">3</span><span class="hljs-operator">/</span><span class="hljs-number">8</span><span class="hljs-string">&quot; x 5/8&quot;</span><br>接头 <span class="hljs-variable">EK</span><span class="hljs-operator">-</span><span class="hljs-variable">Quantum</span> <span class="hljs-variable">Torque</span> <span class="hljs-variable">Extender</span> <span class="hljs-variable">Rotary</span> <span class="hljs-variable">MM</span> <span class="hljs-number">14</span> <span class="hljs-operator">-</span> <span class="hljs-variable">Nickel</span><br>阀   <span class="hljs-variable">Alphacool</span> <span class="hljs-number">2</span><span class="hljs-operator">-</span><span class="hljs-variable">Way</span> <span class="hljs-built_in">Ball</span> <span class="hljs-variable">Valve</span> <span class="hljs-variable">G1</span><span class="hljs-operator">/</span><span class="hljs-number">4</span> <span class="hljs-operator">-</span> <span class="hljs-built_in">Black</span> <span class="hljs-variable">Nickel</span><br></code></pre></td></tr></table></figure><h3 id="配置解析">配置解析<a class="anchor" href="#配置解析">·</a></h3><p>内置冷排的选择了黑冰，因为其是公认的最强360薄排，外置的没有选择广受好评的MO-RA3（因为缺货）就选择了欧酷的1260超新星，纯铜45mm还是很强的，有人测过比MO-RA强一点。CPU冷头是坛友强推的Aquacomputer， 没有花里胡哨滴RGB，也没有亚克力，但是性能确实顶，加上这次下单的时候注意选了带偏移扣具版的（没错，猫头鹰和D大的冷头/散热器偏移扣具其实老早就有厂商在3000系的时候尝试了，目前看来效果很不错，具体测试后面会有。GPU的冷头选择就很有限了，之前入了个追风者的，热点和边缘不管怎么装和涂硅脂都有35度+的温差，非常恐怖，让我怀疑我这到底是不是水冷，果断回归EK（因为TitanRig 打折，只要47刀，自行车？）水泵是站长大大强推的APEX，确实很安静，串联泵盖加上20%最低转速也能带的动。水箱我是BP老用户了，第一次搞ITX分体就用的他家最小的50mm的Z-Multi，印象很好，又是最便宜的那一档，就果断搞了个100mm的（之前用过150mm，在弹药库里面有点太高不方便维护）。快拧BA不必多说，丑但好用的经典。 快插和弯头都是KL的，业内最好用没有之一。 风扇是猫头鹰和联力的无限静积木风扇，26%转速，不用多说，一个是安静一个是好看。 冷液就是前文简单开箱的Mayhems X1了。 最后水管用的EPDM，没有啥别的选择（缺货）所以就用的EK的ZMT。整套为了方便维护以及减少维护和不必要的放水，在CPU和GPU上分别用两套快插将水路分离（试水的时候显卡冷头螺丝妹拧紧漏了很烦但是清理起来是真方便）。上排也加了对快插（别的地方放不下了哈哈哈）。后排的水管特意留的比较长，方便拆卸的时候留足够的空间。</p><p>上几张祖传座机画质的图</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/filling.jpg" alt="filling"></p><p>试水，一开始没有注意到显卡漏了，还好一滴都没漏到PCB上，于是果断把显卡拉出来重新上紧了螺丝继续跑</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/front-no-glass.jpg" alt="front no glass">擦电，揩鸡，轻松点亮！</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/front-glass.jpg" alt="front glass"></p><p>装上玻璃侧板，没有撕膜，15mm的U2盘垫高显卡支架真好用哈哈</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/side-glass.jpg" alt="side glass">前脸，软管+无90度的暴力转弯，哈哈哈哈，依旧没有撕膜</p><h3 id="水路解析">水路解析<a class="anchor" href="#水路解析">·</a></h3><p>写本贴的时候才发现我精心设计的水流方向居然是反的。。。好在不影响性能；顺序是水箱-&gt;泵-&gt;外置排-&gt;后排-&gt;显卡-&gt;CPU-&gt;上排-&gt;回水箱</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/loop-design.jpg" alt="loop-design"></p><p>总计用了4个弯头（泵盖到水箱45°，CPU到显卡45+60，显卡到后排60），属实是看了水冷的秘密之后大受启发搞的。其实显卡和CPU上也可以不用弯头，无奈快插体积挺大，不用弯头基本上不可能</p><h3 id="接下来日用最低噪音性能测试（D5-A20-最低转速，A12-SL-INF-660转）">接下来日用最低噪音性能测试（D5 + A20 最低转速，A12 + SL-INF 660转）<a class="anchor" href="#接下来日用最低噪音性能测试（D5-A20-最低转速，A12-SL-INF-660转）">·</a></h3><p><em>水温为泵盖出水口处。</em></p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/CBR23.png" alt="CBR23"></p><h6 id="Cinebench-R23">Cinebench R23<a class="anchor" href="#Cinebench-R23">·</a></h6><p>室温27，水温28，Cinebench R23跑了三轮，水温上升到29，CPU最高66度。170瓦的功耗，感觉在0噪音前提下是还可以了，锐龙还积热，没辙</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/Aida64-10mins.png" alt="Aida64-10mins"></p><h6 id="AIDA64-FPU">AIDA64 FPU<a class="anchor" href="#AIDA64-FPU">·</a></h6><p>单烤FPU十分钟，最高74度，190瓦功耗，水温31度。</p><p><img src="/blog/Water-cooling-Loop-Showcase-W-Tuf-GT-502/Furmark-10mins.png" alt="Furmark-10mins"></p><h6 id="Furmark-1440P">Furmark 1440P<a class="anchor" href="#Furmark-1440P">·</a></h6><p>305W显卡（+100W CPU）单烤十分钟，边缘稳定在45度，最高来到46，热点则是67，最高69。水温35度，实测后排风口温度32度，外置冷排31度</p><p>懒得双烤了，就比烤Furmark多100瓦。</p><h3 id="小结">小结<a class="anchor" href="#小结">·</a></h3><p>从去年搞ssupd 2代分体到216再到弹药箱 ，从高中最后一年开始到高中毕业准备去上大学，我感觉很满足，终于可以摆脱温度焦虑和噪音了。感谢CHH的各位大佬的帮助，同时对被站长B站测评室拉黑感到抱歉，我不记得我评论了啥。总而言之，言而总之，这波我毕业了，这套配置再战五年不是问题。第一次写这么长，也算是记录一下一个菜鸡搞分体的过程。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Chiphell</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>AMD</tag>
+      
+      <tag>PC</tag>
+      
+      <tag>ASUS</tag>
+      
+      <tag>Water-cooling</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>3DMark is the best triple A game! This is probably why I am not a hardcore gamer</title>
+    <link href="/blog/post/game-stats.html"/>
+    <url>/blog/post/game-stats.html</url>
+    
+    <content type="html"><![CDATA[<p><img src="/blog/post/game-stats/image-20220928205350463.png" alt="image-20220928205350463"></p><p>Imagine spending the same amount of time playing Cyberpunk and Time Spy…</p><p>😃</p><p><img src="/blog/post/game-stats/w250.png" alt="6950XT $1000+"></p><p>I genuinely wish I could afford a ROG Strix 6950XT LC for the sake of better performance and overclocking, but…</p><p>I am happy with my 6650XT 😮</p><p><img src="https://dlcdnwebimgs.asus.com/files/media/C586897F-1BD7-4A48-B800-992702DC3C1F/v1/img/kv-cover.png" alt=""></p><h3 id="Update">Update<a class="anchor" href="#Update">·</a></h3><p>My dream actually came true last year around November some day, I got the ROG Strix 6800 XT LC for $525 used (almost new).It was such a steal, and I have been happily gaming, coding, and machine-learing on it since.AMD driver is by no means horrible, but usable as long as there is an attempt.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Overclocking</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>AMD</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>End of an era! Micron DDR4 Rev.B 16GB Overclocking Showcase</title>
+    <link href="/blog/post/micron-b-die-16GB-overclocking-showcase.html"/>
+    <url>/blog/post/micron-b-die-16GB-overclocking-showcase.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="Why-Who-de-hell-needs-64-gigs">Why? Who de hell needs 64 gigs?<a class="anchor" href="#Why-Who-de-hell-needs-64-gigs">·</a></h1><p>After struggling with full CLANG LTO (Linker time optimization) using 32GB of RAM in early July, I decided to go all in for 64GB of RAM.Since it has already been the end to DDR4 RAM, Crucial (mostly Micron) has decided to stop the production of the Ballistix line-up, therefore, it has already become nearly impossible to find any new kit under MSRP.Luckily, after days of researching on eBay, I found someone who’s willing to sell his for 260 bucks.3200MHz, C16, 64GB, Micron <s>B-die</s> Rev.B … Bet it has to be a good deal.</p><h1 id="OC-result">OC result<a class="anchor" href="#OC-result">·</a></h1><p>It turns out it has been an awesome deal. Whereas, my CPU along with the ITX board is not good enough to keep it running at above-4000MHz.To be more accurate, 3800MHz w/ 1900MHz FCLK is as far as it could reach.</p><table><thead><tr><th></th><th>RAM OC</th><th>POST</th><th>Stable</th></tr></thead><tbody><tr><td>1</td><td>3200@C14</td><td>✔️</td><td>✖️</td></tr><tr><td>2</td><td>3600@C16</td><td>✔️</td><td>✔️(stock)</td></tr><tr><td>3</td><td><strong>3800@C16</strong></td><td>✔️</td><td>✔️</td></tr><tr><td>4</td><td>4200@C20</td><td>✔️</td><td>✖️ (? Zen3 non-APU IMC sucks!)</td></tr></tbody></table><p>Anyway, I’ll update with more details. Right now, I have been running this OC configuration for like a month now, everything is looking solid.It was even functioning well at 70 degrees Celsius, but Samsung’s legendary B-die suffers from anything higher than 50.</p><p><img src="/blog/post/micron-b-die-16GB-overclocking-showcase/oAhnvE9f1Npqzc3.png" alt="image.png"></p><h3 id="Update">Update<a class="anchor" href="#Update">·</a></h3><p>It is extremely sad to see the Ballistix go after being a reliable and affordable choise for years.As of August, 2023, Micron’s DDR5 still sucks ass. It really makes me not wanna upgrade to DDR5 any time soon.Hynix A-die is in fact a way better choice, but affordability and the problem with the Zen 4 IMC are worse.</p><p>It’s been a year since I started using the sticks for OCing. Luckily no corruption or anything happened to themselves. I actually got another pair of non-RGB version whereas the ICs on that one are absolutely trash - C9BLF clearly is incapable of being the successor of C9BLG but unfortunately it happened to be as my new pair is manufactured almost a year later than my previous.</p><h1 id="Results">Results<a class="anchor" href="#Results">·</a></h1><p><img src="/blog/post/micron-b-die-16GB-overclocking-showcase/7KB9mCPfnMAX2J5.png" alt="final oc - bench - 64gb.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Overclocking</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>AMD</tag>
+      
+      <tag>Micron</tag>
+      
+      <tag>Crucial</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Lazy Overclocking &amp; Undervolting RTX 3060 LP</title>
+    <link href="/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP.html"/>
+    <url>/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="Prologue">Prologue<a class="anchor" href="#Prologue">·</a></h1><p>After the Lenovo Tech came to my home and replaced my heatsink, I’m able to mess around with higher TDP on my 3060 again.</p><h1 id="My-3060">My 3060<a class="anchor" href="#My-3060">·</a></h1><p>I don’t really know how good my 3060 is binned, but it seems pretty decent to me.</p><p><img src="/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP/image-20220204212659248.png" alt="GPU-Z"></p><h2 id="Micron-VRAM">Micron VRAM<a class="anchor" href="#Micron-VRAM">·</a></h2><p>I don’t mine, thus in my daily usage(casual gaming with AAA title like Tomb Raider and GTA and E-Sports titles like LOL and CSGO), I don’t really feel a difference comparing to my old mobo that has Samsung VRAM. However, Micron failed even with mild OC due to hot temps. Hence I have to stick with +400 on M.CLK.</p><h1 id="OC-Procedure">OC Procedure<a class="anchor" href="#OC-Procedure">·</a></h1><h3 id="Open-up-curve-editor">Open up curve editor<a class="anchor" href="#Open-up-curve-editor">·</a></h3><p>I’m a lazy guy and I don’t like gay lines. Therefore, I just open up MSI AfterBurner and jump right in onto the curve editor.</p><p><img src="/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP/image-20220204213505546.png" alt="Stock Curve"></p><h3 id="Drag-the-whole-curve">Drag the whole curve<a class="anchor" href="#Drag-the-whole-curve">·</a></h3><p>It is a lazy method because of how simple it is to be achieving what I wanted:</p><p><img src="/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP/image-20220205080809360.png" alt="After OC&amp;UV"></p><p>Basically I just drag the point at .85V up to 1830-1850 ish, then Re-select and drag the points right to 1V to the bottom. And here we are, the OC&amp;UV is done!</p><h3 id="VRAM-OC">VRAM OC<a class="anchor" href="#VRAM-OC">·</a></h3><p>Simply adding 400 on the M.CLK is more than enough.</p><table><thead><tr><th></th><th>VRAM OC(Micron)</th><th>Result</th></tr></thead><tbody><tr><td>1</td><td>400</td><td>✅</td></tr><tr><td>2</td><td>800</td><td>❎</td></tr><tr><td>3</td><td>1200</td><td>❎</td></tr></tbody></table><p>Micron VRAM runs really hot thus anything higher than or equal to 800 gives a <code>CLOCK_WATCHDOG_TIMEOUT</code>. (Yeah, it’s hilarious how GPU OC causes a CPU often related BSOD)</p><h1 id="Result">Result<a class="anchor" href="#Result">·</a></h1><p><img src="/blog/post/Lazy-Overclocking-Undervolting-RTX-3060-LP/Timespy.png" alt="r/LenovoLegion - Legion7i 11800H 3060 max OC"></p><h1 id="Conclusion">Conclusion<a class="anchor" href="#Conclusion">·</a></h1><p>By default, the 3060 LP could only get to 8512 on Timespy, with this no-brainer +189 on C.CLK and +400 on M.CLK, a 10% increase in performance is clearly noticeable.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Overclocking</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>NVIDIA</tag>
+      
+      <tag>GA106-B</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Overclocking non-XMP RAM attempt on Legion7-16ITHg6</title>
+    <link href="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6.html"/>
+    <url>/blog/post/Overclocking-RAM-on-Legion7-16ITHg6.html</url>
+    
+    <content type="html"><![CDATA[<hr><h2 id="Prologue">Prologue<a class="anchor" href="#Prologue">·</a></h2><p>When I first bricked my brand new Legion 7i back in last August, I was convinced that resetting CMOS does not have any affect on Lenovo’s mobo. Now it turns out that it is partially true.</p><hr><h2 id="Weird-Reddit-post">Weird Reddit post<a class="anchor" href="#Weird-Reddit-post">·</a></h2><p><a href="https://www.reddit.com/r/LenovoLegion/comments/s4yciv/lenovo_legion_amd_users_5900hx5800h_w_unlocked/">Lenovo Legion AMD users (5900HX/5800H) w/ unlocked BIOS FREE Performance gains : LenovoLegion (reddit.com)</a></p><p>This reddit post talks about how he used XMP on the AMD counterpart while managing to un-brick using the <code>unplug CMOS </code>method.</p><p>I was shocked at first glance because I was clear that all of us on Discord that tried BIOS UV/OC and bricked did not manage to un-brick using the same method.</p><p>It was clear something was wrong.</p><p>Then, mentioning how his failed to post and only showed a black screen, one comment caught my eyes and grabbed my mind.</p><p>Based on our past experience, whenever the mobo feels not good about the timings/OC/UV you set, it does fail to post, and it does not show a black screen.</p><p>Theoretically. on Intel versions of the Legion, there is one option called <code>self-healing</code> that is turned on by default. What is hilarious about this, is that the AMD one has this disabled by default.</p><p>Why? Because of the <em>stupid</em> <code>self-healing</code> probably. I thought so at the beginning.</p><p>Well, it might not be true. Today I read the comment and was temped to give RAM OC and CMOS reset a try. (I don’t have to mess around with UV anymore because I figured out that -70mv is the best and I set that in BIOS already)</p><hr><h2 id="My-RAM-kit">My RAM kit<a class="anchor" href="#My-RAM-kit">·</a></h2><p>My RAM kit is a crappy <code>3200MHz, CL22@1.2v</code> one from <code>Mushkin Essentials</code>, an unknown sub-brand owned by <code>Avant Tech.</code>, another non-popular American company. The manufacturer mainly uses <code>SK Hynix</code> chips due to its low costs while mine actually is using <code>Micron</code> chips.(SPD was empty somehow)</p><p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117115719644.png" alt="CPU-Z"></p><p>Like I said, my kit came with Micron chips, with the following code printed clearly on the two-sided stick:<code>0FE45</code><code>D9ZFV</code><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117141703003.png" alt="RAM installed"></p><p>2Rx8 chips are embedded on each sides, making it a 32Gx2 Dual Rank kit</p><p>According to Micron documents, it means: <code>2020-10th_week-E-die-japan-china</code></p><p>By looking up in Micron’s database, it corresponds to this:</p><table><thead><tr><th style="text-align:center">Part Number</th><th style="text-align:center">FBGA Code</th></tr></thead><tbody><tr><td style="text-align:center">MT40A2G8JC-062E:E</td><td style="text-align:center">D9ZFV</td></tr></tbody></table><p><a href="https://www.micron.com/products/dram/ddr4-sdram/part-catalog/mt40a2g8jc-062e">MT40A2G8JC-062E | Micron Technologies, Inc</a></p><p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121249444.png" alt="Stock results, trash as hell"></p><hr><h2 id="Get-hands-dirty">Get hands dirty<a class="anchor" href="#Get-hands-dirty">·</a></h2><p>Long story short, with the above information in mind, I know that this kit cannot be OC’ed much. I also know that I should disable <code>self-healing</code>  while at it.</p><p>So my first shot was <code>3200MHz, 18-19-19-36@1.35v</code>. This simply did not post. Okay, so I unplugged the battery and CMOS battery. Pressed and hold the power button for like a min. Then plugged them back in. Pressed the button again, magically, it posted and booted right into Windows.</p><p>Yawn, I know this sucks, so I tried a milder OC, <code>3200MHz, 21-21-21-47@1.2v</code>. This booted just fine.</p><p>I guessed it could be pushed even more, thus next I tried <code>3200MHz, 19-20-20-40@1.35v</code>. And it booted as well. However, as I ran a Cache and Mem test in AIDA64, the screen froze when it’s running the write test.</p><p>I almost gave up, did another trial with <code>3400MHz, 22-22-52@1.35v</code>. Surprisingly, it cripplingly booted and passed the AIDA64 benchmark!</p><p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121013282.png" alt="First successful attempt, not great"></p><p>Latency almost dropped by 20%, and read/write increased significantly as well.</p><hr><h2 id="Final-results">Final results<a class="anchor" href="#Final-results">·</a></h2><p>I wanted more so I eventually set it to <code>3400MHz, 20-20-50@1.35v</code>.</p><p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117121457778.png" alt="Final attempt"></p><p>It did not pass the TM5 stress test, but it seems fine so far. At least it ran the AIDA64 bench without any issues.</p><p>I’ll check out games and Time spy later today. Hopefully it will weather the stress.</p><h2 id="Data-analysis">Data analysis<a class="anchor" href="#Data-analysis">·</a></h2><h3 id="Before-OC-baseline">Before OC (baseline):<a class="anchor" href="#Before-OC-baseline">·</a></h3><table><thead><tr><th style="text-align:center">CLK</th><th style="text-align:center">CL</th><th style="text-align:center">tRCD/RP</th><th style="text-align:center">tRAS</th><th style="text-align:center">tRFC</th><th style="text-align:center">R</th><th style="text-align:center">W</th><th style="text-align:center">Cp</th><th style="text-align:center">Latency</th></tr></thead><tbody><tr><td style="text-align:center">3200</td><td style="text-align:center">22</td><td style="text-align:center">22</td><td style="text-align:center">52</td><td style="text-align:center">560</td><td style="text-align:center">44270</td><td style="text-align:center">43619</td><td style="text-align:center">41191</td><td style="text-align:center">110</td></tr></tbody></table><h3 id="After-OC">After OC:<a class="anchor" href="#After-OC">·</a></h3><table><thead><tr><th style="text-align:center">Result</th><th style="text-align:center">CLK</th><th style="text-align:center">CL</th><th style="text-align:center">tRCD/RP</th><th style="text-align:center">tRAS</th><th style="text-align:center">tRFC</th><th style="text-align:center">R</th><th style="text-align:center">W</th><th style="text-align:center">Cp</th><th style="text-align:center">Latency</th></tr></thead><tbody><tr><td style="text-align:center">❎</td><td style="text-align:center">3200</td><td style="text-align:center">18</td><td style="text-align:center">19</td><td style="text-align:center">36</td><td style="text-align:center">480</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td></tr><tr><td style="text-align:center">✅</td><td style="text-align:center">3200</td><td style="text-align:center">21</td><td style="text-align:center">21</td><td style="text-align:center">47</td><td style="text-align:center">480</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td></tr><tr><td style="text-align:center">❎</td><td style="text-align:center">3200</td><td style="text-align:center">19</td><td style="text-align:center">20</td><td style="text-align:center">40</td><td style="text-align:center">480</td><td style="text-align:center">N/A</td><td style="text-align:center">N//A</td><td style="text-align:center">N/A</td><td style="text-align:center">N/A</td></tr><tr><td style="text-align:center">✅</td><td style="text-align:center">3400</td><td style="text-align:center">22</td><td style="text-align:center">22</td><td style="text-align:center">52</td><td style="text-align:center">560</td><td style="text-align:center">49942</td><td style="text-align:center">48111</td><td style="text-align:center">66065</td><td style="text-align:center">85</td></tr><tr><td style="text-align:center">❎</td><td style="text-align:center">3400</td><td style="text-align:center">20</td><td style="text-align:center">20</td><td style="text-align:center">50</td><td style="text-align:center">560</td><td style="text-align:center">52894</td><td style="text-align:center">48343</td><td style="text-align:center">47989</td><td style="text-align:center">85</td></tr><tr><td style="text-align:center">❎</td><td style="text-align:center">3400</td><td style="text-align:center">21</td><td style="text-align:center">20</td><td style="text-align:center">51</td><td style="text-align:center">560</td><td style="text-align:center">52244</td><td style="text-align:center">48173</td><td style="text-align:center">51571</td><td style="text-align:center">85</td></tr><tr><td style="text-align:center">✅</td><td style="text-align:center">3400</td><td style="text-align:center">21</td><td style="text-align:center">21</td><td style="text-align:center">51</td><td style="text-align:center">560</td><td style="text-align:center">52352</td><td style="text-align:center">48136</td><td style="text-align:center">51306</td><td style="text-align:center">86</td></tr></tbody></table><h5 id="Memory-clocks-are-measured-in-MHz-Read-write-and-copy-speeds-are-measured-in-MB-s-Latencies-are-measured-in-ns"><em>Memory clocks are measured in MHz. Read, write and copy speeds are measured in MB/s. Latencies are measured in ns.</em><a class="anchor" href="#Memory-clocks-are-measured-in-MHz-Read-write-and-copy-speeds-are-measured-in-MB-s-Latencies-are-measured-in-ns">·</a></h5><hr><h2 id="Update">Update<a class="anchor" href="#Update">·</a></h2><p>Played <code>Tomb Raider</code>, which I got from <code>Epic Games</code>, for 30 minutes, and it seems all good. Played <code>League of Legends</code> for another 23 minutes, no BSOD yet.</p><hr><h2 id="Update-2">Update #2<a class="anchor" href="#Update-2">·</a></h2><p>It gave me a frozen screen while playing my second Aram game in LOL.</p><p>(Sigh…)</p><p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117151242978.png" alt="3400MHz@CL21"></p><p>As you can see I bumped the timings a bit, and it does not seem to be losing performance in the benchmark. Let’s see if this can hold any longer.</p><hr><h2 id="Update-3">Update #3<a class="anchor" href="#Update-3">·</a></h2><p>Well, it crashed again. Now I’ve slackened the timings even more, and I am running the TM5 with <code>Extreme1@anta777</code> again; it’s been 1 hour without an error.</p><p><img src="/blog/post/Overclocking-RAM-on-Legion7-16ITHg6/image-20220117170758947.png" alt="TM5, Extreme1@anta777"></p><p>I guess I should work on timings more next time it crashes(it probably never will).</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Overclocking</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Intel</tag>
+      
+      <tag>BIOS</tag>
+      
+      <tag>Tigerlake-H</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Using sed to edit commit header</title>
+    <link href="/blog/post/Using-sed-to-edit-commit-header.html"/>
+    <url>/blog/post/Using-sed-to-edit-commit-header.html</url>
+    
+    <content type="html"><![CDATA[<p>Just in case I forget about this in the near future:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs git">git filter-branch -f --msg-filter &#x27;sed &quot;1s/^/THING/g&quot;&#x27; HEAD^..HEAD<br></code></pre></td></tr></table></figure><p>^ This adds <strong>THING</strong> to your commit header within the range <code>HEAD^ to HEAD</code></p><p>Same thing can be done to the bottom line, but it’s not useful for me.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>General</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>General</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>QTI Bluetooth Stack on Android 12</title>
+    <link href="/blog/post/QTI-Bluetooth-Stack-on-Android-12.html"/>
+    <url>/blog/post/QTI-Bluetooth-Stack-on-Android-12.html</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://review.lineageos.org/q/topic:twelve-qti-bt-stack">topic:twelve-qti-bt-stack · Gerrit Code Review (lineageos.org)</a></p><p>It took me a while to port it to Lineage, after hours of cherry-picking, it was finally done last night.</p><p>Funny thing about this is that CAF guys actually added proprietary features, aka bt adv audio to the open source code.</p><p>Well, I can understand that it is conditional, but some of the includes aren’t handled the same way which literally breaks the build right away.</p><p>As for bluetooth, QSSI is great: the Android 11 vendor stack works just fine, with no missing symbols or whatever.</p><p>Bluetooth is probably one of the <strong>only</strong> few things that one can utilize from QSSI.</p><p>I’ll get into WiFi display today while at it.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>General</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>General</tag>
+      
+      <tag>Android</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
